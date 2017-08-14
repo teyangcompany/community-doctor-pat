@@ -30,7 +30,7 @@
     },
     methods:{
       addPatient(){
-        this.$router.push('/detailPatient')
+        this.$router.push('/add')
       }
     },
     components:{

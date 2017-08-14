@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapIll">
     <v-header :title="title" :rightTitle="rightTitle"></v-header>
     <div class="ill">
       <div class="weui-cells weui-cells_form">
@@ -35,13 +35,20 @@
 <style scoped lang='scss'>
   @import '../../../common/public.scss';
   @import '../../../common/mixin.scss';
-  .ill{
+  .wrapIll{
     position: fixed;
-    top: 50px;
-    bottom:0;
+    top:0;
     left:0;
     right:0;
-    background-color: #FFFFFF;
+    bottom:0;
+    z-index:100;
+    .ill{
+      position: fixed;
+      top: 50px;
+      bottom:0;
+      left:0;
+      right:0;
+      background-color: #FFFFFF;
+    }
   }
-
 </style>

@@ -11,7 +11,7 @@
                    </div>
                    <div class="mainContent">
                      <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
-                     <div>
+                     <div  @click="makeLarge()">
                        <img src="../../../static/img/chatOrigin.jpg" alt="">
                        <img src="../../../static/img/chatOrigin.jpg" alt="">
                        <img src="../../../static/img/chatOrigin.jpg" alt="">
@@ -33,7 +33,7 @@
                    </div>
                    <div class="mainContent">
                      <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
-                     <div>
+                     <div @click="makeLarge()">
                        <img src="../../../static/img/chatOrigin.jpg" alt="">
                        <img src="../../../static/img/chatOrigin.jpg" alt="">
                        <img src="../../../static/img/chatOrigin.jpg" alt="">
@@ -55,7 +55,7 @@
                    </div>
                    <div class="mainContent">
                      <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
-                     <div>
+                     <div @click="makeLarge()">
                        <img src="../../../static/img/chatOrigin.jpg" alt="">
                        <img src="../../../static/img/chatOrigin.jpg" alt="">
                        <img src="../../../static/img/chatOrigin.jpg" alt="">
@@ -77,7 +77,7 @@
                    </div>
                    <div class="mainContent">
                      <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
-                     <div>
+                     <div @click="makeLarge()">
                        <img src="../../../static/img/chatOrigin.jpg" alt="">
                        <img src="../../../static/img/chatOrigin.jpg" alt="">
                        <img src="../../../static/img/chatOrigin.jpg" alt="">
@@ -99,7 +99,7 @@
                    </div>
                    <div class="mainContent">
                      <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
-                     <div>
+                     <div @click="makeLarge()">
                        <img src="../../../static/img/chatOrigin.jpg" alt="">
                        <img src="../../../static/img/chatOrigin.jpg" alt="">
                        <img src="../../../static/img/chatOrigin.jpg" alt="">
@@ -121,7 +121,7 @@
                    </div>
                    <div class="mainContent">
                      <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
-                     <div>
+                     <div @click="makeLarge()">
                        <img src="../../../static/img/chatOrigin.jpg" alt="">
                        <img src="../../../static/img/chatOrigin.jpg" alt="">
                        <img src="../../../static/img/chatOrigin.jpg" alt="">
@@ -137,6 +137,15 @@
                </ul>
              </div>
           </div>
+          <div class="centerDisplay" transition="fade" v-if="largePreview" @click="makeSmall()">
+            <div class="slider-wrapper" ref="sliderWrapper">
+              <slider ref="slider" :popImg="largePreview" :index="goindex" :previewImg="previewImg">
+                <div  v-for="singleImage in previewImg"  @click="makeSmall()">
+                  <img :src="singleImage" alt=""  @click="makeSmall()">
+                </div>
+              </slider>
+            </div>
+          </div>
           <router-link tag="div" to="/iWantConsult" class="iWant" ref="iWant">
             <span>我要咨询</span>
           </router-link>
@@ -145,11 +154,19 @@
 <script>
   import header from'../../base/header'
   import navBar from '../../base/navBar'
+  import Slider from '../../base/slider'
   import BScroll from 'better-scroll'
   export default{
       data(){
           return{
-
+            largePreview:false,
+            goindex:"",
+            previewImg:[
+              "../../../static/img/chatOrigin.jpg",
+              "../../../static/img/chatOrigin.jpg",
+              "../../../static/img/chatOrigin.jpg",
+              "../../../static/img/chatOrigin.jpg",
+            ],
           }
       },
       mounted(){
@@ -171,7 +188,7 @@
                   click:true,
                   probeType: 2,
               })
-             console.log(this.online)
+//             console.log(this.online)
             this.online.on("scroll",()=>{
                 this.$refs.iWant.$el.style.right = -70 + 'px'
               this.$refs.iWant.$el.style.transition = 1 + 's'
@@ -181,11 +198,19 @@
               this.$refs.iWant.$el.style.transition = 1 + 's'
             })
           },
-
+        makeLarge(index){
+          this.largePreview = true
+          this.goindex = index
+        },
+        makeSmall(){
+//          console.log("123")
+          this.largePreview = false
+        },
       },
       components:{
           "VHeader":header,
-           navBar
+           navBar,
+           Slider
       }
   }
 </script>
@@ -301,6 +326,64 @@
         margin-bottom: 40px;
       }
     }
+  }
+  .centerDisplay{
+    width:100%;
+    height:100%;
+    position: fixed;
+    display: flex;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:400;
+    background-color: rgba(0,0,0,.3);
+    justify-content: center;
+    align-items: center;
+    button.imgDelete{
+      background-color:white;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 70px;
+      right:10%;
+      border:none;
+      outline: medium;
+      border-radius: 10px;
+      /*opacity: 0.5;*/
+      color: #0FBDFF!important;
+    }
+    button.leftClose{
+      background-color:white;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 70px;
+      left:10%;
+      border:none;
+      outline: medium;
+      border-radius: 10px;
+      /*opacity: 0.5;*/
+      color: #0FBDFF!important;
+    }
+  }
+  .fade-transition{
+    transition: all 0.5s;
+    opacity: 1;
+    background: rgba(7, 17, 27, 0.6);
+  }
+  .fade-enter,.fade-leave{
+    opacity: 0;
+    background: rgba(7, 17, 27, 0);
+  }
+  .slider-wrapper{
+    position: relative;
+    width:100%;
+    top:0;
+    z-index:500;
+
+    /*background-color: #E64340;*/
+    overflow: hidden;
   }
   .ratings{
     color: #FF9900!important;
