@@ -2,9 +2,10 @@
   <transition name="slide">
     <div class="signWhole">
        <v-header :title="title" :rightTitle="rightTitle"></v-header>
-      <div class="mySign">
+      <div class="mySign" ref="mySign">
+        <div>
         <ul class="border-1px">
-          <router-link tag="div" to=" ">
+          <router-link tag="div" to="/mySignService">
             <li>
               <div class="cancelImg">
                 <img src="../../../../static/img/chatOrigin.jpg" alt="">
@@ -96,30 +97,113 @@
             <div class="listCenter">
                 <div class="leftWord">
                     <p>2017-8-3 8:58 - 2017-8-3 9:30</p>
-                    <p>张三 上门服务</p>
+                    <p><img src="../../../../static/img/chatOrigin.jpg" alt="">张三 上门服务</p>
                 </div>
                 <div class="rightWord">
                     详细 <img src="../../../../static/img/查看更多.png" alt="">
                 </div>
             </div>
         </router-link>
+        <router-link tag="div" to="/detailService" class="historyList border-1px">
+          <div class="listCenter">
+            <div class="leftWord">
+              <p>2017-8-3 8:58 - 2017-8-3 9:30</p>
+              <p><img src="../../../../static/img/chatOrigin.jpg" alt="">张三 电话咨询</p>
+            </div>
+            <div class="rightWord">
+              详细 <img src="../../../../static/img/查看更多.png" alt="">
+            </div>
+          </div>
+        </router-link>
+        <router-link tag="div" to="/detailService" class="historyList border-1px">
+          <div class="listCenter">
+            <div class="leftWord">
+              <p>2017-8-3 8:58 - 2017-8-3 9:30</p>
+              <p><img src="../../../../static/img/chatOrigin.jpg" alt="">张三 电话咨询</p>
+            </div>
+            <div class="rightWord">
+              详细 <img src="../../../../static/img/查看更多.png" alt="">
+            </div>
+          </div>
+        </router-link>
+        <router-link tag="div" to="/detailService" class="historyList border-1px">
+          <div class="listCenter">
+            <div class="leftWord">
+              <p>2017-8-3 8:58 - 2017-8-3 9:30</p>
+              <p><img src="../../../../static/img/chatOrigin.jpg" alt="">张三 图文咨询</p>
+            </div>
+            <div class="rightWord">
+              详细 <img src="../../../../static/img/查看更多.png" alt="">
+            </div>
+          </div>
+        </router-link>
+        <router-link tag="div" to="/detailService" class="historyList border-1px">
+          <div class="listCenter">
+            <div class="leftWord">
+              <p>2017-8-3 8:58 - 2017-8-3 9:30</p>
+              <p><img src="../../../../static/img/chatOrigin.jpg" alt="">张三 上门服务</p>
+            </div>
+            <div class="rightWord">
+              详细 <img src="../../../../static/img/查看更多.png" alt="">
+            </div>
+          </div>
+        </router-link>
+        <router-link tag="div" to="/detailService" class="historyList border-1px">
+          <div class="listCenter">
+            <div class="leftWord">
+              <p>2017-8-3 8:58 - 2017-8-3 9:30</p>
+              <p><img src="../../../../static/img/chatOrigin.jpg" alt="">张三 电话咨询</p>
+            </div>
+            <div class="rightWord">
+              详细 <img src="../../../../static/img/查看更多.png" alt="">
+            </div>
+          </div>
+        </router-link>
+        <router-link tag="div" to="/detailService" class="historyList border-1px">
+          <div class="listCenter">
+            <div class="leftWord">
+              <p>2017-8-3 8:58 - 2017-8-3 9:30</p>
+              <p><img src="../../../../static/img/chatOrigin.jpg" alt=""> 张三 图文咨询</p>
+            </div>
+            <div class="rightWord">
+              详细 <img src="../../../../static/img/查看更多.png" alt="">
+            </div>
+          </div>
+        </router-link>
         <div class="revoke">
            <div>
              <button>解约</button>
            </div>
         </div>
+        <div class="placehold">
+
+        </div>
+      </div>
       </div>
     </div>
   </transition>
 </template>
 <script>
   import header from '../../../base/header'
+  import BScroll from 'better-scroll'
   export default{
       data(){
           return{
              title:"我的签约服务",
              rightTitle:""
         }
+      },
+      mounted(){
+         this.$nextTick(()=>{
+             this._initMySign()
+         })
+      },
+      methods:{
+         _initMySign(){
+             this.mySign = new BScroll(this.$refs.mySign,{
+                 click:true
+             })
+         }
       },
       components:{
           "VHeader":header
@@ -244,6 +328,7 @@
     width:100%;
     .listCenter{
       width:690rem/$rem;
+      height:200rem/$rem;
       margin:0 auto;
       display: flex;
       justify-content: space-between;
@@ -252,12 +337,21 @@
         p{
           font-size: 32rem/$rem;
           color: #333333;
+          margin-bottom: 30rem/$rem;
           font-family: PingFangSC;
+          display: flex;
+          align-items: center;
+          img{
+            width:50rem/$rem;
+            height:50rem/$rem;
+            margin-right: 20rem/$rem;
+            border-radius: 50%;
+          }
         }
       }
       .rightWord{
           font-size: 32rem/$rem;
-          color: #666666;
+          color: #999999;
           font-family: PingFangSC;
       }
       img{
@@ -283,6 +377,11 @@
         background-color:red;
       }
     }
+  }
+  .placehold{
+    margin-top: 20rem/$rem;
+    height: 20px;
+    width:100%;
   }
 }
   .ratings{

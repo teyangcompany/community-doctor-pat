@@ -33,12 +33,6 @@
                    </div>
                    <div class="mainContent">
                      <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
-                     <div @click="makeLarge()">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                     </div>
                    </div>
                    <div class="ConsultRelate">
 
@@ -59,7 +53,6 @@
                        <img src="../../../static/img/chatOrigin.jpg" alt="">
                        <img src="../../../static/img/chatOrigin.jpg" alt="">
                        <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
                      </div>
                    </div>
                    <div class="ConsultRelate">
@@ -77,12 +70,6 @@
                    </div>
                    <div class="mainContent">
                      <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
-                     <div @click="makeLarge()">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                     </div>
                    </div>
                    <div class="ConsultRelate">
 

@@ -120,6 +120,9 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          img{
+            width:90rem/$rem;
+          }
         }
         .cancelIntro{
           flex:2;
@@ -163,9 +166,8 @@
           }
         }
         img{
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
+          width: 120rem/$rem;
+          height: 120rem/$rem;
         }
       }
     }

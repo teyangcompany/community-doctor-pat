@@ -8,10 +8,10 @@
             <img src="../../../../static/img/chatOrigin.jpg" alt="">
           </div>
           <div class="doctorIntro">
-            <h4>华佗</h4>
+            <h4><span class="mainTitle">华佗</span><span class="chief">首席</span></h4>
             <h6>全科 主任医生</h6>
             <h6>杭州市xxx社区服务中心</h6>
-            <div class="checkRating"> <span>签约患者</span><span class="number">296</span> <span>|</span> <span>评价</span> <span class="ratings">9.5分></span> </div>
+            <div class="checkRating"> <span>签约患者 </span><span class="number">296</span> <span>|</span> <span>评价</span> <span class="ratings">9.5分></span> </div>
           </div>
         </div>
         <div class="attachTeam border-1px">
@@ -70,10 +70,10 @@
             </li>
           </ul>
         </div>
-        <div class="scanCode">
+        <div class="scanCode border-1px">
           <img src="../../../../static/img/qr.png" alt="">
         </div>
-        <div class="sign border-1px-top">
+        <div class="sign border-1px">
           <span class="green">签约他的团队</span>
         </div>
       </div>
@@ -147,6 +147,26 @@
         h4{
           font-weight: normal;
           margin:0;
+          span.mainTitle{
+            margin-left: 60rem/$rem;
+            font-size: 32rem/$rem;
+          }
+          span.chief{
+            position: relative;
+            font-size: 28rem/$rem;
+            color: #FF9900;
+            display: inline-block;
+            border: 1px solid #FF9900;
+            width:58rem/$rem;
+            height: 29rem/$rem;
+            margin:0;
+            line-height: 31rem/$rem;
+            text-align: center;
+            left: 12rem/$rem;
+          }
+          span.empty{
+            border:none;
+          }
         }
         h6{
           font-weight:normal;
@@ -233,7 +253,7 @@
         padding:0;
         li {
           width: 90%;
-          height: 116px;
+          /*height: 116px;*/
           border-radius: 7px;
           background-color:white;
           /*border: 1px solid rgb(205, 205, 205);*/
@@ -260,7 +280,7 @@
               font-size: 15px;
               color: gray;
               height: 52px;
-              padding-top: 5px;
+              /*padding-top: 5px;*/
               /*background-color: #E64340;*/
             }
           }

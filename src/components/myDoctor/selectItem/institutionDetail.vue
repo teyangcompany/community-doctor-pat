@@ -1,7 +1,8 @@
 <template>
     <div class="wrapDetail">
        <v-header :title="title" :rightTitle="rightTitle"></v-header>
-       <div class="teamList">
+       <div class="teamList" ref="team">
+         <div>
          <div class="card border-1px">
            <div>
              <p class="instutionTitle">杭州市XXX社区服务中心</p>
@@ -61,17 +62,49 @@
              <h6>赛车运动赛车运动分为两大类，场地赛车和非场地赛车。起源距今已有超过100年的历史。最早的赛车比赛是在城市间的公路上进行的。</h6>
            </div>
          </div>
+         <div class="institutionDes border-1px">
+           <div class="desCenter">
+             <h4>机构介绍</h4>
+             <h6>赛车运动赛车运动分为两大类，场地赛车和非场地赛车。起源距今已有超过100年的历史。最早的赛车比赛是在城市间的公路上进行的。</h6>
+           </div>
+         </div>
+         <div class="institutionDes border-1px">
+           <div class="desCenter">
+             <h4>机构介绍</h4>
+             <h6>赛车运动赛车运动分为两大类，场地赛车和非场地赛车。起源距今已有超过100年的历史。最早的赛车比赛是在城市间的公路上进行的。</h6>
+           </div>
+         </div>
+         <div class="institutionDes border-1px">
+           <div class="desCenter">
+             <h4>机构介绍</h4>
+             <h6>赛车运动赛车运动分为两大类，场地赛车和非场地赛车。起源距今已有超过100年的历史。最早的赛车比赛是在城市间的公路上进行的。</h6>
+           </div>
+         </div>
+       </div>
        </div>
     </div>
 </template>
 <script>
    import header from '../../../base/header'
+   import BScroll from 'better-scroll'
    export default{
        data(){
           return{
               title:"机构详情",
               rightTitle:""
           }
+       },
+      mounted(){
+          this.$nextTick(()=>{
+              this._initTeam()
+          })
+      },
+       methods:{
+           _initTeam(){
+               this.teamScroll = new BScroll(this.$refs.team,{
+                   click:true
+               })
+           }
        },
        components:{
            "VHeader":header

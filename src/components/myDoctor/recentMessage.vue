@@ -133,6 +133,9 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          img{
+            width:100rem/$rem;
+          }
         }
         .cancelIntro{
           flex:2;
@@ -143,7 +146,7 @@
             display: inline-block;
             padding-top: -5px;
             .myDoctor{
-              width: 120rem/$rem;
+              width: 80rem/$rem;
               height: 36rem/$rem;
               background-color: darkturquoise;
               border-radius:5px;

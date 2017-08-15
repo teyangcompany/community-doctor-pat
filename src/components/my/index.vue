@@ -106,6 +106,9 @@
               font-family: PingFangSC;
               color: #333333;
             }
+            span:nth-child(2),span:nth-child(3){
+              color: #999999;
+            }
           }
           img.profile{
             width: 60px;

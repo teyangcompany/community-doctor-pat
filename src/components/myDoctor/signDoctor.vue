@@ -21,7 +21,7 @@
               <div class="cancelTime">
                 <div class="forArrow">
                 <span>
-                  签约 <img src="../../../static/img/查看更多.png" alt="">
+                 <span class="sign number">签约</span> <img src="../../../static/img/查看更多.png" alt="">
                 </span>
                 </div>
               </div>
@@ -167,6 +167,17 @@
               text-align: right;
               color: #666666;
               font-size: 32rem/$rem;
+              .sign{
+                display: inline-block;
+                height: 32rem/$rem;
+                width:80rem/$rem;
+                line-height: 35rem/$rem;
+                background-color: darkturquoise;
+                font-size: 24rem/$rem;
+                border-radius: 5px;
+                text-align: center;
+                color: white;
+              }
               img{
                 width: 8px;
                 height: 12px;
@@ -182,4 +193,7 @@
       }
     }
   }
+  /*.number{*/
+    /*color: #3399FF!important;*/
+  /*}*/
 </style>

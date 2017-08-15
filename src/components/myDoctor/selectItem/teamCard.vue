@@ -28,29 +28,41 @@
         </div>
         <div class="institutionDes border-1px">
           <div class="desCenter">
-            <h4>团队成员(4位) <span>查看更多> </span> </h4>
+            <h4>团队成员(4位) <span>查看更多<img src="../../../../static/img/查看更多.png" alt=""></span> </h4>
             <div>
-              <div>
+              <div >
                 <img src="../../../../static/img/chatOrigin.jpg" alt="">
-                <span class="name">华佗</span>
+                <span class="name">华佗<span class="chief ratings">首席</span></span>
                 <span>全科</span>
                 <span>主治医生</span>
               </div>
-              <div>
+              <div >
                 <img src="../../../../static/img/chatOrigin.jpg" alt="">
-                <span class="name">华佗</span>
+                <span class="name">张三<span class="chief empty ratings"></span></span>
                 <span>全科</span>
-                <span>主治医生</span>
+                <span>实习医生</span>
               </div>
               <div>
                 <img src="../../../../static/img/chatOrigin.jpg" alt="">
-                <span class="name">华佗</span>
+                <span class="name">李四<span class="chief empty ratings"></span></span>
+                <span>全科</span>
+                <span>护工</span>
+              </div>
+              <div >
+                <img src="../../../../static/img/chatOrigin.jpg" alt="">
+                <span class="name">张无<span class="chief ratings">首席</span></span>
                 <span>全科</span>
                 <span>主治医生</span>
               </div>
-              <div>
+              <div >
                 <img src="../../../../static/img/chatOrigin.jpg" alt="">
-                <span class="name">华佗</span>
+                <span class="name">张无<span class="chief ratings">首席</span></span>
+                <span>全科</span>
+                <span>主治医生</span>
+              </div>
+              <div >
+                <img src="../../../../static/img/chatOrigin.jpg" alt="">
+                <span class="name">张无<span class="chief ratings">首席</span></span>
                 <span>全科</span>
                 <span>主治医生</span>
               </div>
@@ -60,7 +72,7 @@
         <div class="border-1px articleListTitle">
           <div class="articleTitleCenter">
             <span class="picConsult">精选文章</span>
-            <span class="consultTim">查看更多</span>
+            <span class="consultTim">查看更多<img src="../../../../static/img/查看更多.png" alt=""></span>
           </div>
         </div>
         <div class="goodArticle">
@@ -202,6 +214,10 @@
           span{
             color: #999999;
             font-size: 28rem/$rem;
+            img{
+              width:16rem/$rem;
+              height:24rem/$rem;
+            }
           }
         }
         h6{
@@ -226,7 +242,22 @@
             }
             span.name{
               color: #000;
+              margin-left: 60rem/$rem;
               font-size: 32rem/$rem;
+              span.chief{
+                position: relative;
+                display: inline-block;
+                border: 1px solid #FF9900;
+                width:58rem/$rem;
+                height: 29rem/$rem;
+                margin:0;
+                line-height: 31rem/$rem;
+                text-align: center;
+                left: 12rem/$rem;
+              }
+              span.empty{
+                border:none;
+              }
             }
             img{
               width:80rem/$rem;
@@ -254,6 +285,10 @@
         span.consultTim {
           font-size: 28rem/$rem;
           color: #666666;
+          img{
+            width:16rem/$rem;
+            height:24rem/$rem;
+          }
         }
       }
     }
@@ -263,14 +298,12 @@
         margin-bottom: 0;
         padding:0;
         li {
-          width: 90%;
-          height: 116px;
-          border-radius: 7px;
+          width: 690rem/$rem;
+          height: 160rem/$rem;
           background-color:white;
-          /*border: 1px solid rgb(205, 205, 205);*/
           list-style-type: none;
           margin: 0 auto;
-          padding: 8px 8px 8px 8px;
+          padding: 0px 8px 8px 8px;
           div.mainContent {
             p {
               display: -webkit-box;
@@ -280,7 +313,6 @@
               font-size: 15px;
               color: gray;
               height: 52px;
-              padding-top: 5px;
               /*background-color: #E64340;*/
             }
           }

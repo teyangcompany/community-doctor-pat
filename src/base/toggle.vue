@@ -5,11 +5,13 @@
       <div class="title">
         <p class="m light border-1px">请选择就诊人</p>
       </div>
-      <div class="main">
-        <div v-for="(item,index) in patList" @click="check(index)">
-          <p class="dark border-1px">{{item}}</p>
+      <div class="main" id="wrapper">
+        <div>
+          <div v-for="(item,index) in patList" @click="check(index)">
+            <p class="dark border-1px">{{item}}</p>
+          </div>
+          <p class="lightBlue border-1px" @click="addPat()">添加就诊人<span><img src="../../static/img/add.png"></span></p>
         </div>
-        <p class="lightBlue border-1px" @click="addPat()">添加就诊人<span><img src="../../static/img/add.png"></span></p>
       </div>
       <div class="ft">
         <p class="dark cancel" @click="closeToggle()">取消</p>
@@ -19,7 +21,7 @@
 </template>
 <script>
   import MyPopup from "./pop.vue";
-
+  import IScroll from 'iscroll'
   export default({
     components:{
       MyPopup
@@ -37,6 +39,14 @@
       }
     },
     methods:{
+      _initPatient(){
+         this.myScroll = new IScroll("#wrapper",{
+           mouseWheel: true,
+           momentum:true,
+           useTransition:true,
+           click:true
+         })
+      },
       check(index){
         this.$emit("activate",index);
       },
@@ -52,6 +62,15 @@
       close(){
         this.$emit("toggleClosed")
       }
+    },
+    watch:{
+      showPat(){
+          this.$nextTick(()=>{
+             setTimeout(()=>{
+               this._initPatient()
+             },100)
+          })
+      }
     }
   })
 </script>
@@ -66,15 +85,12 @@
     display:flex;
     flex-direction:column;
     flex:1 1 auto;
-    div{
+     div{
       background:white;
       p{
         position:relative;
         /*border-top:1px solid silver;*/
         @include letter;
-        &:hover{
-          /*background-color:gray;*/
-        }
         img{
           position:absolute;
           height:1rem;
@@ -85,17 +101,15 @@
       flex:0 0 auto;
       text-align:center;
       padding:0 auto;
-      &.title{
-        /*border-bottom:.5px solid silver;*/
-      }
-      &.main{
-
-        flex: 1 1 auto;
-        overflow:auto;
-      }
       &.ft{
         margin-top:.5rem;
       }
+    }
+    div#wrapper{
+      /*height:10rem;*/
+      /*width:100%;*/
+      flex: 1 1 auto;
+      overflow:hidden;
     }
   }
 </style>

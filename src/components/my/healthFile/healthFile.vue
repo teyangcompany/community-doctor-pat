@@ -94,7 +94,7 @@
             </div>
           </div>
         </router-link>
-        <div class="recordList">
+        <router-link tag="div" class="recordList border-1px" to="/deleteRecord">
           <div class="wrapList">
             <p class="listTime number">2017-13-12</p>
             <p class="listContent">我最近因为经常在晚上看书，光线又十分不明亮的时候看导致最近视力降的很快</p>
@@ -108,9 +108,18 @@
               <div>
                 <img src="../../../../static/img/chatOrigin.jpg" alt="">
               </div>
+              <div>
+                <img src="../../../../static/img/chatOrigin.jpg" alt="">
+              </div>
+              <div>
+                <img src="../../../../static/img/chatOrigin.jpg" alt="">
+              </div>
+              <div>
+                <img src="../../../../static/img/chatOrigin.jpg" alt="">
+              </div>
             </div>
           </div>
-        </div>
+        </router-link>
         <div class="addFile">
           <router-link tag="div" to="/addRecord" class="button">
             <button>+ 添加诊疗记录</button>
@@ -300,7 +309,7 @@
     .addFile{
       width:100%;
       height: 100px;
-      margin-top: 100px;
+      margin-top: 50px;
       margin-bottom: 50px;
       /*background-color: #0FBDFF;*/
       display: flex;

@@ -138,7 +138,7 @@
         return{
           title:"签约团队",
           rightTitle:"",
-          patientAll:['飞机','火车','装甲车'],
+          patientAll:['飞机','火车','装甲车','汽车','自行车','摩托车','摩拜单车','小黄车'],
           showPat:false,
           displayPatient:"",
           chosedIndex:0
