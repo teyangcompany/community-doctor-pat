@@ -13,12 +13,14 @@
                      <img src="../../../../static/img/chatOrigin.jpg" alt="">
                      <span>微信</span>
                    </div>
-                   <img src="../../../../static/img/chatOrigin.jpg" alt="">
+                 <div class="icon_sp_area">
+                   <i class="weui-icon-success"></i>
+                 </div>
                </div>
            </div>
            <div class="confirmPay">
               <div class="confirmCenter">
-                 <button>确认支付</button>
+                 <button @click="goSuccess()">确认支付</button>
               </div>
            </div>
          </div>
@@ -32,6 +34,11 @@
              title:"支付",
               rightTitle:""
           }
+      },
+      methods:{
+        goSuccess(){
+            this.$router.push('/applySuccess')
+        }
       },
       components:{
           "VHeader":header
@@ -87,6 +94,7 @@
        display: flex;
        justify-content: space-between;
        align-items: center;
+
        >div{
          display: flex;
          align-items: center;

@@ -40,9 +40,9 @@
           {title1:"签约医生",tabLink:'/index/signDoctor'},
         ],
         bottomTags:[
-          {title:'我的医生',tabLink:"/index/recent",imgLinkIndexOn:"../../static/img/home_on.png",imgLinkOn:"../../static/img/home.png",imgLinkMyOn:"../../static/img/home.png"},
-          {title:'在线咨询',tabLink:"/onlineIndex",imgLinkIndexOn:"../../static/img/myDoctorBottom.png",imgLinkOn:"../../static/img/myDoctor_on.png",imgLinkMyOn:"../../static/img/myDoctorBottom.png"},
-          {title:'我的',tabLink:"/myIndex",imgLinkIndexOn:"../../static/img/myBottom.png",imgLinkOn:"../../static/img/myBottom.png",imgLinkMyOn:"../../static/img/myBottom_on.png"}
+          {title:'我的医生',tabLink:"/index/recent",imgLinkIndexOn:"./static/img/home_on.png",imgLinkOn:"./static/img/home.png",imgLinkMyOn:"./static/img/home.png"},
+          {title:'在线咨询',tabLink:"/onlineIndex",imgLinkIndexOn:"./static/img/myDoctorBottom.png",imgLinkOn:"./static/img/myDoctor_on.png",imgLinkMyOn:"./static/img/myDoctorBottom.png"},
+          {title:'我的',tabLink:"/myIndex",imgLinkIndexOn:"./static/img/myBottom.png",imgLinkOn:"./static/img/myBottom.png",imgLinkMyOn:"./static/img/myBottom_on.png"}
         ],
         tellPath:""
       }

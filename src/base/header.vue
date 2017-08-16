@@ -13,6 +13,9 @@
     <section class="nav"  @click="addPatient()" v-if="path == '/addPatient'">
       <span class="rightWord">{{rightTitle}}</span>
     </section>
+    <section class="nav"  @click="detailPage()" v-else-if="path == '/addRecord'">
+      <span class="rightWord">{{rightTitle}}</span>
+    </section>
     <section class="nav"  @click="apply()" v-else>
       <span class="rightWord">{{rightTitle}}</span>
     </section>
@@ -46,6 +49,9 @@
       addPatient(){
         this.$emit("on-add")
       },
+      detailPage(){
+          this.$emit("on-detail")
+      }
     },
     watch:{
       "$route":function(){

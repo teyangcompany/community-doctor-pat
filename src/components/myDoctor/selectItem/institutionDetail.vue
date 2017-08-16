@@ -56,6 +56,44 @@
              </div>
            </router-link>
          </div>
+           <div class="team border-1px">
+             <router-link tag="div" to="/teamCard" class="teamCenter">
+               <div class="teamTitle">
+                 <span class="mainTitle">扁鹊老年养护团队</span>
+                 <span class="rightTitle">签约患者 <span class="number">296 </span> <span>|</span> <span class="comment">评价 </span> <span class="ratings">9.5分</span> </span>
+               </div>
+               <div class="teamContent">
+                 <p>介绍：赛车运动赛车运动分为两大类，场地赛车和非场地赛车。起源距今已有超过100年的历史。最早的赛车比赛是在城市间的公路上进行的。</p>
+                 <div>
+                   <div>
+                     <img src="../../../../static/img/chatOrigin.jpg" alt="">
+                     <span>华佗</span>
+                     <span class="doctorRank">主治医生</span>
+                   </div>
+                   <div>
+                     <img src="../../../../static/img/chatOrigin.jpg" alt="">
+                     <span>华佗</span>
+                     <span class="doctorRank">主治医生</span>
+                   </div>
+                   <div>
+                     <img src="../../../../static/img/chatOrigin.jpg" alt="">
+                     <span>华佗</span>
+                     <span class="doctorRank">主治医生</span>
+                   </div>
+                   <div>
+                     <img src="../../../../static/img/chatOrigin.jpg" alt="">
+                     <span>华佗</span>
+                     <span class="doctorRank">主治医生</span>
+                   </div>
+                   <div>
+                     <img src="../../../../static/img/chatOrigin.jpg" alt="">
+                     <span>华佗</span>
+                     <span class="doctorRank">主治医生</span>
+                   </div>
+                 </div>
+               </div>
+             </router-link>
+           </div>
          <div class="institutionDes border-1px">
            <div class="desCenter">
              <h4>机构介绍</h4>
@@ -189,6 +227,7 @@
         .teamTitle{
           display: flex;
           height: 30px;
+          padding-top: 5px;
           align-items: center;
           justify-content: space-between;
           .mainTitle{
@@ -225,6 +264,7 @@
           >div{
             display: flex;
             margin-top: 15px;
+            padding-bottom: 5px;
             >div{
               display: flex;
               flex:1;

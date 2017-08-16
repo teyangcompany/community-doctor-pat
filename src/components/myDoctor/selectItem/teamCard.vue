@@ -30,42 +30,42 @@
           <div class="desCenter">
             <h4>团队成员(4位) <span>查看更多<img src="../../../../static/img/查看更多.png" alt=""></span> </h4>
             <div>
-              <div >
+              <router-link tag="div" to="/signSingle">
                 <img src="../../../../static/img/chatOrigin.jpg" alt="">
                 <span class="name">华佗<span class="chief ratings">首席</span></span>
                 <span>全科</span>
                 <span>主治医生</span>
-              </div>
-              <div >
+              </router-link>
+              <router-link tag="div" to="/signSingle">
                 <img src="../../../../static/img/chatOrigin.jpg" alt="">
                 <span class="name">张三<span class="chief empty ratings"></span></span>
                 <span>全科</span>
                 <span>实习医生</span>
-              </div>
-              <div>
+              </router-link>
+              <router-link tag="div" to="/signSingle">
                 <img src="../../../../static/img/chatOrigin.jpg" alt="">
                 <span class="name">李四<span class="chief empty ratings"></span></span>
                 <span>全科</span>
                 <span>护工</span>
-              </div>
-              <div >
+              </router-link>
+              <router-link tag="div" to="/signSingle">
                 <img src="../../../../static/img/chatOrigin.jpg" alt="">
                 <span class="name">张无<span class="chief ratings">首席</span></span>
                 <span>全科</span>
                 <span>主治医生</span>
-              </div>
-              <div >
+              </router-link>
+              <router-link tag="div" to="/signSingle">
                 <img src="../../../../static/img/chatOrigin.jpg" alt="">
                 <span class="name">张无<span class="chief ratings">首席</span></span>
                 <span>全科</span>
                 <span>主治医生</span>
-              </div>
-              <div >
+              </router-link>
+              <router-link tag="div" to="/signSingle">
                 <img src="../../../../static/img/chatOrigin.jpg" alt="">
                 <span class="name">张无<span class="chief ratings">首席</span></span>
                 <span>全科</span>
                 <span>主治医生</span>
-              </div>
+              </router-link>
             </div>
           </div>
         </div>
@@ -105,11 +105,11 @@
             </li>
           </ul>
         </div>
-        <div class="aboutTeam border-1px">
-          <span class="border-1px-right number" @click="goConsult()">咨询团队</span>
-          <span class="green" @click="goSign()">签约团队</span>
-        </div>
       </div>
+    </div>
+    <div class="aboutTeam border-1px-top">
+      <span class="border-1px-right number" @click="goConsult()">咨询团队</span>
+      <span class="green" @click="goSign()">签约团队</span>
     </div>
   </div>
 </template>
@@ -134,10 +134,10 @@
              console.log(this.articleScroll)
           },
         goConsult(){
-              this.$router.push('/signTeam')
+              this.$router.push('/doctorCard')
         },
         goSign(){
-            this.$router.push('/doctorCard')
+            this.$router.push('/signTeam')
         }
       },
       components:{
@@ -152,7 +152,7 @@
   .teamCard{
     position: fixed;
     top: 50px;
-    bottom:0;
+    bottom:50px;
     left:0;
     right:0;
     overflow: hidden;
@@ -340,20 +340,22 @@
         }
       }
     }
-    .aboutTeam{
-      width:100%;
+  }
+  .aboutTeam{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    span{
+      flex:1;
       height: 50px;
-      display: flex;
-      align-items: center;
-      span{
-        flex:1;
-        height: 50px;
-        display: inline-block;
-        line-height: 50px;
-        text-align: center;
-        font-size: 32rem/$rem;
-        color: #333333;
-      }
+      display: inline-block;
+      line-height: 50px;
+      text-align: center;
+      font-size: 32rem/$rem;
+      color: #333333;
     }
   }
   .ratings{

@@ -5,37 +5,20 @@
       <div class="wrapTime border-1px">
         <div class="timeCenter">
           日期
-          <div>
-            2017-13-12
+          <div >
+            2017-8-15
             <img src="../../../../static/img/查看更多.png" alt="">
           </div>
         </div>
       </div>
       <div class="wrapText border-1px">
         <div>
-          <textarea placeholder="请详细描述您的症状、疾病和身体情况。(请放心您的个人信息不会泄露)"></textarea>
+           <p>3212343242141242</p>
         </div>
       </div>
       <div class="wrapImg">
         <div>
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-
-        </div>
-      </div>
-      <div class="logPeople">
-        <p>2016/7/19 由陈丽英添加</p>
-      </div>
-      <div class="addFile">
-        <div class="button">
-          <button>删除</button>
+          <img src="../../../../static/img/chatOrigin.jpg" alt="">
         </div>
       </div>
     </div>
@@ -43,11 +26,33 @@
 </template>
 <script>
   import header from '../../../base/header'
+  import weui from 'weui.js'
+  import {getCurrentTime} from '../../../utils/getTime.js'
   export default{
     data(){
       return{
         title:'病历详情',
-        rightTitle:''
+        rightTitle:'',
+        time:"",
+        date:""
+      }
+    },
+    mounted(){
+      this.time = getCurrentTime()
+    },
+    methods:{
+      selectOther(){
+        let that =this
+        weui.datePicker({
+          start: new Date(),
+          end: 2030,
+          defaultValue: [new Date().getFullYear(), new Date().getMonth()+1, new Date().getDate()],
+          onChange: function(result){
+          },
+          onConfirm: function(result){
+            that.$set(that.$data,'date',result)
+          },
+        })
       }
     },
     components:{
@@ -65,7 +70,6 @@
     bottom:0;
     left:0;
     right:0;
-    z-index:300;
     background-color: white;
     .wrapTime{
       width:100%;
@@ -85,6 +89,7 @@
           img{
             width: 15rem/$rem;
             display: inline-block;
+
           }
         }
       }
@@ -107,17 +112,11 @@
       >div{
         width: 690rem/$rem;
         margin:0 auto;
-        textarea{
-          width: 690rem/$rem;
-          height: 300rem/$rem;
-          resize: none;
-          border:none;
-          outline:medium;
-          padding-top: 30rem/$rem;
-          font-size: 28rem/$rem;
-          line-height: 42rem/$rem;
-          color: #999999;
-          box-sizing: border-box;
+        p{
+          margin:0;
+          padding:0;
+          width:690rem/$rem;
+          height:300rem/$rem;
         }
       }
     }
@@ -126,54 +125,31 @@
       >div{
         width: 690rem/$rem;
         margin: 0 auto;
+        display: flex;
+        align-items: center;
         img{
           width: 140rem/$rem;
           height: 140rem/$rem;
           display: inline-block;
           margin-top: 30rem/$rem;
-          margin-right: 15rem/$rem;
+          margin-right: 24rem/$rem;
+        }
+        div.uploadTip{
+          margin-left: 30rem/$rem;
+          h3{
+            font-size: 28rem/$rem;
+            color: #333333;
+            font-weight: normal;
+          }
+          h5{
+            font-size: 24rem/$rem;
+            color: #999999;
+            margin-top: 20rem/$rem;
+            font-weight: normal;
+          }
         }
       }
     }
-    .logPeople{
-      width:100%;
-      height: 80px;
-      /*background-color: #E64340;*/
-      position: fixed;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      bottom: 180rem/$rem;
-      p{
-        color: #999999;
-        font-size: 28rem/$rem;
-      }
-    }
-    .addFile{
-      width:100%;
-      height: 100px;
-      position: fixed;
-      bottom: 10rem/$rem;
-      /*margin-top: 100px;*/
-      /*margin-bottom: 50px;*/
-      /*background-color: #0FBDFF;*/
-      display: flex;
-      justify-content: center;
-      div.button{
-        width: 690rem/$rem;
-        height: 94rem/$rem;
-        /*background-color: #E64340;*/
-        button{
-          width: 690rem/$rem;
-          height: 94rem/$rem;
-          border:none;
-          outline: medium;
-          border-radius: 10px;
-          color: #FDFDFD;
-          font-size:36rem/$rem;
-          background-color: #FF8588;
-        }
-      }
-    }
+
   }
 </style>

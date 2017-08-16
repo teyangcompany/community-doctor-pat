@@ -39,14 +39,14 @@
               预约信息
             </div>
           </div>
-          <div class="alergic border-1px">
+          <div class="alergic border-1px" @click="selectTime()">
             <div>
               选择预约时间
-              <div class="unBook" @click="selectTime()" v-if="date == ''">
+              <div class="unBook" v-if="date == ''">
                 <span>请选择预约时间</span>
                 <img src="../../../static/img/查看更多.png" alt="">
               </div>
-              <div class="bookTime" @click="selectTime()" v-else>
+              <div class="bookTime" v-else>
                 <span>{{date}}</span><img src="../../../static/img/查看更多.png" alt="">
               </div>
             </div>

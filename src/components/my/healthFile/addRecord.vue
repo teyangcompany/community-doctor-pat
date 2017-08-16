@@ -1,15 +1,15 @@
 <template>
   <div>
-    <v-header :title="title" :rightTitle="rightTitle"></v-header>
+    <v-header :title="title" :rightTitle="rightTitle" @on-detail="detail()"></v-header>
     <div class="recordDetail">
-      <div class="wrapTime border-1px">
+      <div class="wrapTime border-1px" @click="selectOther()">
         <div class="timeCenter">
           日期
-          <div @click="selectOther()" v-if="date == ''">
+          <div v-if="date == ''">
             {{ time }}
             <img src="../../../../static/img/查看更多.png" alt="">
           </div>
-          <div @click="selectOther()" v-else>
+          <div  v-else>
             {{date[0].label + date[1].label + date[2].label}}
             <img src="../../../../static/img/查看更多.png" alt="">
           </div>
@@ -66,6 +66,9 @@
             that.$set(that.$data,'date',result)
           },
         })
+      },
+      detail(){
+          this.$router.push('/detailPage')
       }
     },
     components:{

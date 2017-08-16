@@ -76,7 +76,7 @@
       </div>
     </div>
     <div class="sign border-1px-top">
-      <span class="green" @click="goSign()">签约他的团队</span>
+      <span class="green" @click="goSign()">签约医生</span>
     </div>
   </div>
 </template>
@@ -84,28 +84,28 @@
   import header from '../../../base/header'
   import BScroll from 'better-scroll'
   export default{
-      data(){
-         return{
-             title:"医生团队",
-             rightTitle:""
-         }
-      },
-      mounted(){
-        this._initDoctorScroll()
-      },
-      methods:{
-          _initDoctorScroll(){
-              this.doctorScroll = new BScroll(this.$refs.doctorCard,{
-                  click:true
-              })
-          },
-          goSign(){
-              this.$router.push('/verifyName')
-          }
-      },
-      components:{
-          "VHeader":header
+    data(){
+      return{
+        title:"医生团队",
+        rightTitle:""
       }
+    },
+    mounted(){
+      this._initDoctorScroll()
+    },
+    methods:{
+      _initDoctorScroll(){
+        this.doctorScroll = new BScroll(this.$refs.doctorCard,{
+          click:true
+        })
+      },
+      goSign(){
+        this.$router.push('/signTeam')
+      }
+    },
+    components:{
+      "VHeader":header
+    }
   }
 </script>
 <style scoped lang="scss">
@@ -128,7 +128,7 @@
     .doctorFunc{
       width:100%;
       height: 240px;
-     margin-bottom: 15px;
+      margin-bottom: 15px;
       background-color: white;
       .doctorImg {
         width: 100%;
@@ -327,9 +327,9 @@
     width:100%;
     height: 50px;
     display: flex;
+    background-color: white;
     font-size: 32rem/$rem;
     color: #333333;
-    background-color: white;
     justify-content: center;
     align-items: center;
   }

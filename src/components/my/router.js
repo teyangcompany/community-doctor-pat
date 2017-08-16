@@ -13,6 +13,7 @@ import detailPatient from './patient/detailPatient'
 import add from './patient/add'
 import mySignService from './mySignService/mySignService'
 import detailService from './mySignService/detailService'
+import detailPage from './healthFile/detailPage'
 export default[
   {
     path:'/healthFile',
@@ -63,5 +64,9 @@ export default[
   {
     path:"/add",
     component:add
+  },
+  {
+    path:"/detailPage",
+    component:detailPage
   }
 ]

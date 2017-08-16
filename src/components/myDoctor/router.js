@@ -17,6 +17,7 @@ import applySuccess from './selectItem/applySuccess'
 import onlineIndex from "../online/index"
 import myConsult from '../online/myConsult'
 import myIndex from "../my/index"
+import signSingle from './selectItem/signSingle'
 export default[
   {
      path:'',
@@ -93,5 +94,9 @@ export default[
   {
     path:"/applySuccess",
     component:applySuccess
+  },
+  {
+    path:"/signSingle",
+    component:signSingle
   }
 ]
