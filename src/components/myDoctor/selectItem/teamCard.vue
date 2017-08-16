@@ -15,13 +15,13 @@
           </div>
         </div>
         <div class="institutionDes border-1px">
-          <div class="desCenter">
+          <div class="desCenter team">
             <h4>团队擅长</h4>
             <h6>赛车运动赛车运动分为两大类，场地赛车和非场地赛车。起源距今已有超过100年的历史。最早的赛车比赛是在城市间的公路上进行的。</h6>
           </div>
         </div>
         <div class="institutionDes border-1px">
-          <div class="desCenter">
+          <div class="desCenter team">
             <h4>团队介绍</h4>
             <h6>赛车运动赛车运动分为两大类，场地赛车和非场地赛车。起源距今已有超过100年的历史。最早的赛车比赛是在城市间的公路上进行的。</h6>
           </div>
@@ -199,6 +199,9 @@
       .desCenter{
         width: 690rem/$rem;
         margin:0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         h4,h6{
           margin:0;
           padding:0;
@@ -208,7 +211,7 @@
           font-size: 28rem/$rem;
           color: #333333;
           font-family: PingFangSC;
-          margin-top: 5px;
+          /*margin-top: 5px;*/
           display: flex;
           justify-content: space-between;
           span{
@@ -223,7 +226,7 @@
         h6{
           font-size:28rem/$rem;
           color: #999999;
-          margin-top: 5px;
+          /*margin-top: 5px;*/
         }
         >div{
           display: flex;
@@ -266,6 +269,9 @@
             }
           }
         }
+      }
+      .team{
+        height:210rem/$rem;
       }
     }
     div.articleListTitle{

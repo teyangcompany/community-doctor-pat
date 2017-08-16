@@ -28,6 +28,319 @@
             </li>
           </router-link>
         </ul>
+        <ul class="border-1px" v-for="item in followList">
+          <router-link tag="div" to="/institution">
+            <li>
+              <div class="cancelImg">
+                <img :src=" item.docAvatar " alt="">
+              </div>
+              <div class="cancelIntro">
+                <div>
+                  <span class="followName">{{ item.docName }}</span>
+                  <!--<div class="badgeDoc">-->
+                  <span class="myDoctor">主治医生</span>
+                  <!--</div>-->
+                  <p>{{ item.hosName }}</p>
+                  <p>{{ item.deptName }}</p>
+                </div>
+              </div>
+              <div class="cancelTime">
+                <div class="forArrow">
+                <span>
+                 <span class="sign number">签约</span> <img src="../../../static/img/查看更多.png" alt="">
+                </span>
+                </div>
+              </div>
+            </li>
+          </router-link>
+        </ul>
+        <ul class="border-1px" v-for="item in followList">
+          <router-link tag="div" to="/institution">
+            <li>
+              <div class="cancelImg">
+                <img :src=" item.docAvatar " alt="">
+              </div>
+              <div class="cancelIntro">
+                <div>
+                  <span class="followName">{{ item.docName }}</span>
+                  <!--<div class="badgeDoc">-->
+                  <span class="myDoctor">主治医生</span>
+                  <!--</div>-->
+                  <p>{{ item.hosName }}</p>
+                  <p>{{ item.deptName }}</p>
+                </div>
+              </div>
+              <div class="cancelTime">
+                <div class="forArrow">
+                <span>
+                 <span class="sign number">签约</span> <img src="../../../static/img/查看更多.png" alt="">
+                </span>
+                </div>
+              </div>
+            </li>
+          </router-link>
+        </ul>
+        <ul class="border-1px" v-for="item in followList">
+          <router-link tag="div" to="/institution">
+            <li>
+              <div class="cancelImg">
+                <img :src=" item.docAvatar " alt="">
+              </div>
+              <div class="cancelIntro">
+                <div>
+                  <span class="followName">{{ item.docName }}</span>
+                  <!--<div class="badgeDoc">-->
+                  <span class="myDoctor">主治医生</span>
+                  <!--</div>-->
+                  <p>{{ item.hosName }}</p>
+                  <p>{{ item.deptName }}</p>
+                </div>
+              </div>
+              <div class="cancelTime">
+                <div class="forArrow">
+                <span>
+                 <span class="sign number">签约</span> <img src="../../../static/img/查看更多.png" alt="">
+                </span>
+                </div>
+              </div>
+            </li>
+          </router-link>
+        </ul>
+        <ul class="border-1px" v-for="item in followList">
+          <router-link tag="div" to="/institution">
+            <li>
+              <div class="cancelImg">
+                <img :src=" item.docAvatar " alt="">
+              </div>
+              <div class="cancelIntro">
+                <div>
+                  <span class="followName">{{ item.docName }}</span>
+                  <!--<div class="badgeDoc">-->
+                  <span class="myDoctor">主治医生</span>
+                  <!--</div>-->
+                  <p>{{ item.hosName }}</p>
+                  <p>{{ item.deptName }}</p>
+                </div>
+              </div>
+              <div class="cancelTime">
+                <div class="forArrow">
+                <span>
+                 <span class="sign number">签约</span> <img src="../../../static/img/查看更多.png" alt="">
+                </span>
+                </div>
+              </div>
+            </li>
+          </router-link>
+        </ul>
+        <ul class="border-1px" v-for="item in followList">
+          <router-link tag="div" to="/institution">
+            <li>
+              <div class="cancelImg">
+                <img :src=" item.docAvatar " alt="">
+              </div>
+              <div class="cancelIntro">
+                <div>
+                  <span class="followName">{{ item.docName }}</span>
+                  <!--<div class="badgeDoc">-->
+                  <span class="myDoctor">主治医生</span>
+                  <!--</div>-->
+                  <p>{{ item.hosName }}</p>
+                  <p>{{ item.deptName }}</p>
+                </div>
+              </div>
+              <div class="cancelTime">
+                <div class="forArrow">
+                <span>
+                 <span class="sign number">签约</span> <img src="../../../static/img/查看更多.png" alt="">
+                </span>
+                </div>
+              </div>
+            </li>
+          </router-link>
+        </ul>
+        <ul class="border-1px" v-for="item in followList">
+          <router-link tag="div" to="/institution">
+            <li>
+              <div class="cancelImg">
+                <img :src=" item.docAvatar " alt="">
+              </div>
+              <div class="cancelIntro">
+                <div>
+                  <span class="followName">{{ item.docName }}</span>
+                  <!--<div class="badgeDoc">-->
+                  <span class="myDoctor">主治医生</span>
+                  <!--</div>-->
+                  <p>{{ item.hosName }}</p>
+                  <p>{{ item.deptName }}</p>
+                </div>
+              </div>
+              <div class="cancelTime">
+                <div class="forArrow">
+                <span>
+                 <span class="sign number">签约</span> <img src="../../../static/img/查看更多.png" alt="">
+                </span>
+                </div>
+              </div>
+            </li>
+          </router-link>
+        </ul>
+        <ul class="border-1px" v-for="item in followList">
+          <router-link tag="div" to="/institution">
+            <li>
+              <div class="cancelImg">
+                <img :src=" item.docAvatar " alt="">
+              </div>
+              <div class="cancelIntro">
+                <div>
+                  <span class="followName">{{ item.docName }}</span>
+                  <!--<div class="badgeDoc">-->
+                  <span class="myDoctor">主治医生</span>
+                  <!--</div>-->
+                  <p>{{ item.hosName }}</p>
+                  <p>{{ item.deptName }}</p>
+                </div>
+              </div>
+              <div class="cancelTime">
+                <div class="forArrow">
+                <span>
+                 <span class="sign number">签约</span> <img src="../../../static/img/查看更多.png" alt="">
+                </span>
+                </div>
+              </div>
+            </li>
+          </router-link>
+        </ul>
+        <ul class="border-1px" v-for="item in followList">
+          <router-link tag="div" to="/institution">
+            <li>
+              <div class="cancelImg">
+                <img :src=" item.docAvatar " alt="">
+              </div>
+              <div class="cancelIntro">
+                <div>
+                  <span class="followName">{{ item.docName }}</span>
+                  <!--<div class="badgeDoc">-->
+                  <span class="myDoctor">主治医生</span>
+                  <!--</div>-->
+                  <p>{{ item.hosName }}</p>
+                  <p>{{ item.deptName }}</p>
+                </div>
+              </div>
+              <div class="cancelTime">
+                <div class="forArrow">
+                <span>
+                 <span class="sign number">签约</span> <img src="../../../static/img/查看更多.png" alt="">
+                </span>
+                </div>
+              </div>
+            </li>
+          </router-link>
+        </ul>
+        <ul class="border-1px" v-for="item in followList">
+          <router-link tag="div" to="/institution">
+            <li>
+              <div class="cancelImg">
+                <img :src=" item.docAvatar " alt="">
+              </div>
+              <div class="cancelIntro">
+                <div>
+                  <span class="followName">{{ item.docName }}</span>
+                  <!--<div class="badgeDoc">-->
+                  <span class="myDoctor">主治医生</span>
+                  <!--</div>-->
+                  <p>{{ item.hosName }}</p>
+                  <p>{{ item.deptName }}</p>
+                </div>
+              </div>
+              <div class="cancelTime">
+                <div class="forArrow">
+                <span>
+                 <span class="sign number">签约</span> <img src="../../../static/img/查看更多.png" alt="">
+                </span>
+                </div>
+              </div>
+            </li>
+          </router-link>
+        </ul>
+        <ul class="border-1px" v-for="item in followList">
+          <router-link tag="div" to="/institution">
+            <li>
+              <div class="cancelImg">
+                <img :src=" item.docAvatar " alt="">
+              </div>
+              <div class="cancelIntro">
+                <div>
+                  <span class="followName">{{ item.docName }}</span>
+                  <!--<div class="badgeDoc">-->
+                  <span class="myDoctor">主治医生</span>
+                  <!--</div>-->
+                  <p>{{ item.hosName }}</p>
+                  <p>{{ item.deptName }}</p>
+                </div>
+              </div>
+              <div class="cancelTime">
+                <div class="forArrow">
+                <span>
+                 <span class="sign number">签约</span> <img src="../../../static/img/查看更多.png" alt="">
+                </span>
+                </div>
+              </div>
+            </li>
+          </router-link>
+        </ul>
+        <ul class="border-1px" v-for="item in followList">
+          <router-link tag="div" to="/institution">
+            <li>
+              <div class="cancelImg">
+                <img :src=" item.docAvatar " alt="">
+              </div>
+              <div class="cancelIntro">
+                <div>
+                  <span class="followName">{{ item.docName }}</span>
+                  <!--<div class="badgeDoc">-->
+                  <span class="myDoctor">主治医生</span>
+                  <!--</div>-->
+                  <p>{{ item.hosName }}</p>
+                  <p>{{ item.deptName }}</p>
+                </div>
+              </div>
+              <div class="cancelTime">
+                <div class="forArrow">
+                <span>
+                 <span class="sign number">签约</span> <img src="../../../static/img/查看更多.png" alt="">
+                </span>
+                </div>
+              </div>
+            </li>
+          </router-link>
+        </ul>
+        <ul class="border-1px" v-for="item in followList">
+          <router-link tag="div" to="/institution">
+            <li>
+              <div class="cancelImg">
+                <img :src=" item.docAvatar " alt="">
+              </div>
+              <div class="cancelIntro">
+                <div>
+                  <span class="followName">{{ item.docName }}</span>
+                  <!--<div class="badgeDoc">-->
+                  <span class="myDoctor">主治医生</span>
+                  <!--</div>-->
+                  <p>{{ item.hosName }}</p>
+                  <p>{{ item.deptName }}</p>
+                </div>
+              </div>
+              <div class="cancelTime">
+                <div class="forArrow">
+                <span>
+                 <span class="sign number">签约</span> <img src="../../../static/img/查看更多.png" alt="">
+                </span>
+                </div>
+              </div>
+            </li>
+          </router-link>
+        </ul>
+
       </div>
     </div>
     <div class="myDoctorList" v-else-if="tempwait == 1 && followList.length == 0">
@@ -60,8 +373,8 @@
         tempwait:1
       }
     },
-    created(){
-
+    mounted(){
+        this._initRecentChat()
     },
     watch:{
       followList(){
@@ -97,7 +410,7 @@
     width:100%;
     position: fixed;
     top: 90px;
-    bottom:0;
+    bottom:98rem/$rem;
     left:0;
     right:0;
     z-index:1;
@@ -119,11 +432,11 @@
     ul{
       padding:0;
       margin:0;
-      height: 200rem/$rem;
+      height: 180rem/$rem;
       /*border-bottom: 1px solid rgb(205,205,205);*/
       li{
         list-style-type: none;
-        height: 200rem/$rem;
+        height: 180rem/$rem;
         display: flex;
         .cancelImg{
           width: 80px;
@@ -135,20 +448,21 @@
           flex:2;
           display: flex;
           align-items: center;
-          line-height: 25px;
+          /*line-height: 25px;*/
           .followName{
-            font-size: 16px;
+            font-size: 32rem/$rem;
           }
             .myDoctor{
               font-size: 28rem/$rem;
               color: #999999;
-              line-height: 18px;
+              /*line-height: 18px;*/
               text-align: center;
             }
           p{
             margin:0;
+            padding:0;
             color: #999999;
-            font-size: 14px;
+            font-size: 28rem/$rem;
           }
           span{
 
@@ -158,7 +472,7 @@
           flex:1;
           .forArrow{
             display: flex;
-            height: 200rem/$rem;
+            height: 180rem/$rem;
             align-items: center;
             justify-content: flex-end;
             margin-right: 12px;
@@ -179,15 +493,15 @@
                 color: white;
               }
               img{
-                width: 8px;
-                height: 12px;
+                width: 16rem/$rem;
+                height: 24rem/$rem;
               }
             }
           }
         }
         img{
-          width: 40px;
-          height: 40px;
+          width: 80rem/$rem;
+          height: 80rem/$rem;
           border-radius: 50%;
         }
       }

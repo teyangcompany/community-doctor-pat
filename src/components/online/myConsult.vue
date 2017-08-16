@@ -1,6 +1,6 @@
 <template>
     <div class="myConsult">
-      <ul>
+      <ul class="border-1px">
         <li >
           <div>
             <span class="picConsult">[李俊基 男 24岁][糖尿病]</span>
@@ -44,7 +44,6 @@
        /*height: 166px;*/
        border-radius: 7px;
        background-color:white;
-       border: 1px solid rgb(205, 205, 205);
        list-style-type: none;
        margin: 0 auto;
        padding: 8px 8px 8px 8px;

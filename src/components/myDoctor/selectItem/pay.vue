@@ -127,6 +127,9 @@
        outline: medium;
        height: 50px;
        border-radius: 7px;
+       color: white;
+       font-size:32rem/$rem;
+       background-color: #3CC51F;
      }
    }
  }

@@ -3,7 +3,7 @@
           <router-view></router-view>
           <div class="onlineConsult" ref="onlineContent">
              <div>
-               <ul>
+               <ul class="border-1px">
                  <li >
                    <div>
                      <span class="picConsult">[男24岁][糖尿病]</span>
@@ -19,7 +19,7 @@
                    </div>
                  </li>
                </ul>
-               <ul>
+               <ul class="border-1px">
                  <li >
                    <div>
                      <span class="picConsult">[男24岁][糖尿病]</span>
@@ -35,7 +35,7 @@
                    </div>
                  </li>
                </ul>
-               <ul>
+               <ul class="border-1px">
                  <li >
                    <div>
                      <span class="picConsult">[男24岁][糖尿病]</span>
@@ -51,29 +51,7 @@
                    </div>
                  </li>
                </ul>
-               <ul>
-                 <li >
-                   <div>
-                     <span class="picConsult">[男24岁][糖尿病]</span>
-                     <!--<span class="consultTim">2016/11/28 18:17</span>-->
-                   </div>
-                   <div class="mainContent">
-                     <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
-                     <div @click="makeLarge()">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                     </div>
-                   </div>
-                   <div class="ConsultRelate">
-
-                     <span class="name"><span class="circle"></span><span class="number">丁克峰</span><span>回答</span>  </span>
-                     <span class="money">1小时前创建 | 3条回复</span>
-                   </div>
-                 </li>
-               </ul>
-               <ul>
+               <ul class="border-1px">
                  <li >
                    <div>
                      <span class="picConsult">[男24岁][糖尿病]</span>
@@ -95,7 +73,7 @@
                    </div>
                  </li>
                </ul>
-               <ul>
+               <ul class="border-1px">
                  <li >
                    <div>
                      <span class="picConsult">[男24岁][糖尿病]</span>
@@ -117,7 +95,7 @@
                    </div>
                  </li>
                </ul>
-               <ul>
+               <ul class="border-1px">
                  <li >
                    <div>
                      <span class="picConsult">[男24岁][糖尿病]</span>
@@ -139,7 +117,7 @@
                    </div>
                  </li>
                </ul>
-               <ul>
+               <ul class="border-1px">
                  <li >
                    <div>
                      <span class="picConsult">[男24岁][糖尿病]</span>
@@ -161,7 +139,7 @@
                    </div>
                  </li>
                </ul>
-               <ul>
+               <ul class="border-1px">
                  <li >
                    <div>
                      <span class="picConsult">[男24岁][糖尿病]</span>
@@ -183,7 +161,7 @@
                    </div>
                  </li>
                </ul>
-               <ul>
+               <ul class="border-1px">
                  <li >
                    <div>
                      <span class="picConsult">[男24岁][糖尿病]</span>
@@ -205,7 +183,7 @@
                    </div>
                  </li>
                </ul>
-               <ul>
+               <ul class="border-1px">
                  <li >
                    <div>
                      <span class="picConsult">[男24岁][糖尿病]</span>
@@ -227,7 +205,7 @@
                    </div>
                  </li>
                </ul>
-               <ul>
+               <ul class="border-1px">
                  <li >
                    <div>
                      <span class="picConsult">[男24岁][糖尿病]</span>
@@ -249,7 +227,29 @@
                    </div>
                  </li>
                </ul>
-               <ul>
+               <ul class="border-1px">
+                 <li >
+                   <div>
+                     <span class="picConsult">[男24岁][糖尿病]</span>
+                     <!--<span class="consultTim">2016/11/28 18:17</span>-->
+                   </div>
+                   <div class="mainContent">
+                     <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
+                     <div @click="makeLarge()">
+                       <img src="../../../static/img/chatOrigin.jpg" alt="">
+                       <img src="../../../static/img/chatOrigin.jpg" alt="">
+                       <img src="../../../static/img/chatOrigin.jpg" alt="">
+                       <img src="../../../static/img/chatOrigin.jpg" alt="">
+                     </div>
+                   </div>
+                   <div class="ConsultRelate">
+
+                     <span class="name"><span class="circle"></span><span class="number">丁克峰</span><span>回答</span>  </span>
+                     <span class="money">1小时前创建 | 3条回复</span>
+                   </div>
+                 </li>
+               </ul>
+               <ul class="border-1px">
                  <li >
                    <div>
                      <span class="picConsult">[男24岁][糖尿病]</span>
@@ -393,17 +393,16 @@
       z-index:100;
       /*background-color: white;*/
       ul {
-        margin-top: 10px;
+        /*margin-top: 10px;*/
         margin-bottom: 10px;
         li {
           width: 690rem/$rem;
           /*height: 166px;*/
           border-radius: 7px;
           background-color:white;
-          border: 1px solid rgb(205, 205, 205);
           list-style-type: none;
           margin: 0 auto;
-          padding: 8px 8px 8px 8px;
+          padding: 0px 8px 8px 8px;
           >div {
             display: flex;
             justify-content: space-between;
@@ -456,6 +455,9 @@
               color: #999999;
             }
           }
+        }
+        li:nth-child(1){
+            padding-top: 5px;
         }
       }
       ul:last-child{

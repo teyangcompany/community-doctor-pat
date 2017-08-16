@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="whole">
     <v-header :title="onlineTitle" :rightTitle="onlineRightTitle" v-if="tellPath == '/onlineIndex'"></v-header>
     <v-header :title="onlineTitle" :rightTitle="onlineRightTitle" v-else-if="tellPath == '/myConsult'"></v-header>
     <v-header :title="title" :rightTitle="rightTitle" v-else-if="tellPath == '/index/recent'"></v-header>
@@ -72,6 +72,13 @@
   @import '../../common/public.scss';
   @import '../../common/var.scss';
   @import '../../common/mixin.scss';
+  .whole{
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+  }
   .footer{
     width:100%;
     height:98rem/$rem;

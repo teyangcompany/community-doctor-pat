@@ -1,7 +1,7 @@
 <template>
   <div class="nav-bar border-1px">
     <ul>
-      <li v-for="tagName in tagNames">
+      <li v-for="tagName in tagNames" class="border-1px-right">
         <router-link  tag="div" :to="tagName.tabLink">
           <span>{{ tagName.title1 }}</span>
         </router-link>

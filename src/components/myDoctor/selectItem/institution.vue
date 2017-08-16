@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="whole">
         <v-header :title="title" :rightTitle="rightTitle"></v-header>
         <div class="place border-1px">
             <span class="border-1px-right">杭州市</span>
@@ -30,6 +30,444 @@
               </li>
             </router-link>
           </ul>
+          <ul class="border-1px" v-for="item in followList">
+            <router-link tag="div" to="/institutionDetail">
+              <li>
+                <div class="cancelImg">
+                  <img :src=" item.docAvatar " alt="">
+                </div>
+                <div class="cancelIntro">
+                  <div>
+                    <span class="myDoctor">杭州市XXX社区服务中心</span>
+                    <p>{{ item.hosName }}</p>
+                    <p>{{ item.deptName }}</p>
+                  </div>
+                </div>
+                <div class="cancelTime">
+                  <div class="forArrow">
+                <span>
+                  离我1.1km
+                </span>
+                  </div>
+                </div>
+              </li>
+            </router-link>
+          </ul>
+          <ul class="border-1px" v-for="item in followList">
+            <router-link tag="div" to="/institutionDetail">
+              <li>
+                <div class="cancelImg">
+                  <img :src=" item.docAvatar " alt="">
+                </div>
+                <div class="cancelIntro">
+                  <div>
+                    <span class="myDoctor">杭州市XXX社区服务中心</span>
+                    <p>{{ item.hosName }}</p>
+                    <p>{{ item.deptName }}</p>
+                  </div>
+                </div>
+                <div class="cancelTime">
+                  <div class="forArrow">
+                <span>
+                  离我1.1km
+                </span>
+                  </div>
+                </div>
+              </li>
+            </router-link>
+          </ul>
+          <ul class="border-1px" v-for="item in followList">
+            <router-link tag="div" to="/institutionDetail">
+              <li>
+                <div class="cancelImg">
+                  <img :src=" item.docAvatar " alt="">
+                </div>
+                <div class="cancelIntro">
+                  <div>
+                    <span class="myDoctor">杭州市XXX社区服务中心</span>
+                    <p>{{ item.hosName }}</p>
+                    <p>{{ item.deptName }}</p>
+                  </div>
+                </div>
+                <div class="cancelTime">
+                  <div class="forArrow">
+                <span>
+                  离我1.1km
+                </span>
+                  </div>
+                </div>
+              </li>
+            </router-link>
+          </ul>
+          <ul class="border-1px" v-for="item in followList">
+            <router-link tag="div" to="/institutionDetail">
+              <li>
+                <div class="cancelImg">
+                  <img :src=" item.docAvatar " alt="">
+                </div>
+                <div class="cancelIntro">
+                  <div>
+                    <span class="myDoctor">杭州市XXX社区服务中心</span>
+                    <p>{{ item.hosName }}</p>
+                    <p>{{ item.deptName }}</p>
+                  </div>
+                </div>
+                <div class="cancelTime">
+                  <div class="forArrow">
+                <span>
+                  离我1.1km
+                </span>
+                  </div>
+                </div>
+              </li>
+            </router-link>
+          </ul>
+          <ul class="border-1px" v-for="item in followList">
+            <router-link tag="div" to="/institutionDetail">
+              <li>
+                <div class="cancelImg">
+                  <img :src=" item.docAvatar " alt="">
+                </div>
+                <div class="cancelIntro">
+                  <div>
+                    <span class="myDoctor">杭州市XXX社区服务中心</span>
+                    <p>{{ item.hosName }}</p>
+                    <p>{{ item.deptName }}</p>
+                  </div>
+                </div>
+                <div class="cancelTime">
+                  <div class="forArrow">
+                <span>
+                  离我1.1km
+                </span>
+                  </div>
+                </div>
+              </li>
+            </router-link>
+          </ul>
+          <ul class="border-1px" v-for="item in followList">
+            <router-link tag="div" to="/institutionDetail">
+              <li>
+                <div class="cancelImg">
+                  <img :src=" item.docAvatar " alt="">
+                </div>
+                <div class="cancelIntro">
+                  <div>
+                    <span class="myDoctor">杭州市XXX社区服务中心</span>
+                    <p>{{ item.hosName }}</p>
+                    <p>{{ item.deptName }}</p>
+                  </div>
+                </div>
+                <div class="cancelTime">
+                  <div class="forArrow">
+                <span>
+                  离我1.1km
+                </span>
+                  </div>
+                </div>
+              </li>
+            </router-link>
+          </ul>
+          <ul class="border-1px" v-for="item in followList">
+            <router-link tag="div" to="/institutionDetail">
+              <li>
+                <div class="cancelImg">
+                  <img :src=" item.docAvatar " alt="">
+                </div>
+                <div class="cancelIntro">
+                  <div>
+                    <span class="myDoctor">杭州市XXX社区服务中心</span>
+                    <p>{{ item.hosName }}</p>
+                    <p>{{ item.deptName }}</p>
+                  </div>
+                </div>
+                <div class="cancelTime">
+                  <div class="forArrow">
+                <span>
+                  离我1.1km
+                </span>
+                  </div>
+                </div>
+              </li>
+            </router-link>
+          </ul>
+          <ul class="border-1px" v-for="item in followList">
+            <router-link tag="div" to="/institutionDetail">
+              <li>
+                <div class="cancelImg">
+                  <img :src=" item.docAvatar " alt="">
+                </div>
+                <div class="cancelIntro">
+                  <div>
+                    <span class="myDoctor">杭州市XXX社区服务中心</span>
+                    <p>{{ item.hosName }}</p>
+                    <p>{{ item.deptName }}</p>
+                  </div>
+                </div>
+                <div class="cancelTime">
+                  <div class="forArrow">
+                <span>
+                  离我1.1km
+                </span>
+                  </div>
+                </div>
+              </li>
+            </router-link>
+          </ul>
+          <ul class="border-1px" v-for="item in followList">
+            <router-link tag="div" to="/institutionDetail">
+              <li>
+                <div class="cancelImg">
+                  <img :src=" item.docAvatar " alt="">
+                </div>
+                <div class="cancelIntro">
+                  <div>
+                    <span class="myDoctor">杭州市XXX社区服务中心</span>
+                    <p>{{ item.hosName }}</p>
+                    <p>{{ item.deptName }}</p>
+                  </div>
+                </div>
+                <div class="cancelTime">
+                  <div class="forArrow">
+                <span>
+                  离我1.1km
+                </span>
+                  </div>
+                </div>
+              </li>
+            </router-link>
+          </ul>
+          <ul class="border-1px" v-for="item in followList">
+            <router-link tag="div" to="/institutionDetail">
+              <li>
+                <div class="cancelImg">
+                  <img :src=" item.docAvatar " alt="">
+                </div>
+                <div class="cancelIntro">
+                  <div>
+                    <span class="myDoctor">杭州市XXX社区服务中心</span>
+                    <p>{{ item.hosName }}</p>
+                    <p>{{ item.deptName }}</p>
+                  </div>
+                </div>
+                <div class="cancelTime">
+                  <div class="forArrow">
+                <span>
+                  离我1.1km
+                </span>
+                  </div>
+                </div>
+              </li>
+            </router-link>
+          </ul>
+          <ul class="border-1px" v-for="item in followList">
+            <router-link tag="div" to="/institutionDetail">
+              <li>
+                <div class="cancelImg">
+                  <img :src=" item.docAvatar " alt="">
+                </div>
+                <div class="cancelIntro">
+                  <div>
+                    <span class="myDoctor">杭州市XXX社区服务中心</span>
+                    <p>{{ item.hosName }}</p>
+                    <p>{{ item.deptName }}</p>
+                  </div>
+                </div>
+                <div class="cancelTime">
+                  <div class="forArrow">
+                <span>
+                  离我1.1km
+                </span>
+                  </div>
+                </div>
+              </li>
+            </router-link>
+          </ul>
+          <ul class="border-1px" v-for="item in followList">
+            <router-link tag="div" to="/institutionDetail">
+              <li>
+                <div class="cancelImg">
+                  <img :src=" item.docAvatar " alt="">
+                </div>
+                <div class="cancelIntro">
+                  <div>
+                    <span class="myDoctor">杭州市XXX社区服务中心</span>
+                    <p>{{ item.hosName }}</p>
+                    <p>{{ item.deptName }}</p>
+                  </div>
+                </div>
+                <div class="cancelTime">
+                  <div class="forArrow">
+                <span>
+                  离我1.1km
+                </span>
+                  </div>
+                </div>
+              </li>
+            </router-link>
+          </ul>
+          <ul class="border-1px" v-for="item in followList">
+            <router-link tag="div" to="/institutionDetail">
+              <li>
+                <div class="cancelImg">
+                  <img :src=" item.docAvatar " alt="">
+                </div>
+                <div class="cancelIntro">
+                  <div>
+                    <span class="myDoctor">杭州市XXX社区服务中心</span>
+                    <p>{{ item.hosName }}</p>
+                    <p>{{ item.deptName }}</p>
+                  </div>
+                </div>
+                <div class="cancelTime">
+                  <div class="forArrow">
+                <span>
+                  离我1.1km
+                </span>
+                  </div>
+                </div>
+              </li>
+            </router-link>
+          </ul>
+          <ul class="border-1px" v-for="item in followList">
+            <router-link tag="div" to="/institutionDetail">
+              <li>
+                <div class="cancelImg">
+                  <img :src=" item.docAvatar " alt="">
+                </div>
+                <div class="cancelIntro">
+                  <div>
+                    <span class="myDoctor">杭州市XXX社区服务中心</span>
+                    <p>{{ item.hosName }}</p>
+                    <p>{{ item.deptName }}</p>
+                  </div>
+                </div>
+                <div class="cancelTime">
+                  <div class="forArrow">
+                <span>
+                  离我1.1km
+                </span>
+                  </div>
+                </div>
+              </li>
+            </router-link>
+          </ul>  <ul class="border-1px" v-for="item in followList">
+          <router-link tag="div" to="/institutionDetail">
+            <li>
+              <div class="cancelImg">
+                <img :src=" item.docAvatar " alt="">
+              </div>
+              <div class="cancelIntro">
+                <div>
+                  <span class="myDoctor">杭州市XXX社区服务中心</span>
+                  <p>{{ item.hosName }}</p>
+                  <p>{{ item.deptName }}</p>
+                </div>
+              </div>
+              <div class="cancelTime">
+                <div class="forArrow">
+                <span>
+                  离我1.1km
+                </span>
+                </div>
+              </div>
+            </li>
+          </router-link>
+        </ul>
+          <ul class="border-1px" v-for="item in followList">
+            <router-link tag="div" to="/institutionDetail">
+              <li>
+                <div class="cancelImg">
+                  <img :src=" item.docAvatar " alt="">
+                </div>
+                <div class="cancelIntro">
+                  <div>
+                    <span class="myDoctor">杭州市XXX社区服务中心</span>
+                    <p>{{ item.hosName }}</p>
+                    <p>{{ item.deptName }}</p>
+                  </div>
+                </div>
+                <div class="cancelTime">
+                  <div class="forArrow">
+                <span>
+                  离我1.1km
+                </span>
+                  </div>
+                </div>
+              </li>
+            </router-link>
+          </ul>
+          <ul class="border-1px" v-for="item in followList">
+            <router-link tag="div" to="/institutionDetail">
+              <li>
+                <div class="cancelImg">
+                  <img :src=" item.docAvatar " alt="">
+                </div>
+                <div class="cancelIntro">
+                  <div>
+                    <span class="myDoctor">杭州市XXX社区服务中心</span>
+                    <p>{{ item.hosName }}</p>
+                    <p>{{ item.deptName }}</p>
+                  </div>
+                </div>
+                <div class="cancelTime">
+                  <div class="forArrow">
+                <span>
+                  离我1.1km
+                </span>
+                  </div>
+                </div>
+              </li>
+            </router-link>
+          </ul>
+          <ul class="border-1px" v-for="item in followList">
+            <router-link tag="div" to="/institutionDetail">
+              <li>
+                <div class="cancelImg">
+                  <img :src=" item.docAvatar " alt="">
+                </div>
+                <div class="cancelIntro">
+                  <div>
+                    <span class="myDoctor">杭州市XXX社区服务中心</span>
+                    <p>{{ item.hosName }}</p>
+                    <p>{{ item.deptName }}</p>
+                  </div>
+                </div>
+                <div class="cancelTime">
+                  <div class="forArrow">
+                <span>
+                  离我1.1km
+                </span>
+                  </div>
+                </div>
+              </li>
+            </router-link>
+          </ul>
+          <ul class="border-1px" v-for="item in followList">
+            <router-link tag="div" to="/institutionDetail">
+              <li>
+                <div class="cancelImg">
+                  <img :src=" item.docAvatar " alt="">
+                </div>
+                <div class="cancelIntro">
+                  <div>
+                    <span class="myDoctor">杭州市XXX社区服务中心</span>
+                    <p>{{ item.hosName }}</p>
+                    <p>{{ item.deptName }}</p>
+                  </div>
+                </div>
+                <div class="cancelTime">
+                  <div class="forArrow">
+                <span>
+                  离我1.1km
+                </span>
+                  </div>
+                </div>
+              </li>
+            </router-link>
+          </ul>
+
+
         </div>
       </div>
     </div>
@@ -37,6 +475,7 @@
 <script>
   import header from '../../../base/header'
   import navBar from '../../../base/navBar'
+  import BScroll from 'better-scroll'
   export default{
       data(){
         return{
@@ -54,6 +493,16 @@
             tempwait:1
         }
       },
+      mounted(){
+         this._initPlace()
+      },
+      methods:{
+        _initPlace(){
+            this.placeScroll = new BScroll(this.$refs.contactList,{
+                click:true
+            })
+        }
+    },
       components:{
         "VHeader":header,
       }
@@ -63,6 +512,13 @@
   @import '../../../common/public.scss';
   @import '../../../common/var.scss';
   @import '../../../common/mixin.scss';
+  .whole{
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+  }
  .place{
    position: fixed;
    top: 50px;
@@ -71,6 +527,8 @@
    width:100%;
    height:40px;
    display: flex;
+   z-index:300;
+   background-color: #FFFFFF;
    justify-content: center;
    align-items: center;
    span{
@@ -109,11 +567,11 @@
     ul{
       padding:0;
       margin:0;
-      height: 200rem/$rem;
+      height: 180rem/$rem;
       /*border-bottom: 1px solid rgb(205,205,205);*/
       li{
         list-style-type: none;
-        height: 200rem/$rem;
+        height: 180rem/$rem;
         display: flex;
         .cancelImg{
           width: 80px;
@@ -121,21 +579,21 @@
           justify-content: center;
           align-items: center;
           img{
-            width:90rem/$rem;
+
           }
         }
         .cancelIntro{
           flex:2;
           display: flex;
           align-items: center;
-          line-height: 25px;
+          /*line-height: 25px;*/
           >div{
             .myDoctor{
               border-radius:5px;
               display: inline-block;
               font-size: 32rem/$rem;
               color: #333333;
-              line-height: 18px;
+              /*line-height: 18px;*/
               text-align: center;
             }
             p{
@@ -149,7 +607,7 @@
           flex:1;
           .forArrow{
             display: flex;
-            height: 200rem/$rem;
+            height: 180rem/$rem;
             align-items: center;
             justify-content: flex-end;
             margin-right: 12px;
@@ -159,15 +617,16 @@
               font-size: 28rem/$rem;
               color: #666666;
               img{
-                width: 8px;
-                height: 12px;
+                width: 16rem/$rem;
+                height: 24rem/$rem;
               }
             }
           }
         }
         img{
-          width: 120rem/$rem;
-          height: 120rem/$rem;
+          width: 80rem/$rem;
+          height: 80rem/$rem;
+          border-radius: 50%;
         }
       }
     }
