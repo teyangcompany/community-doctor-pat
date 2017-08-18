@@ -25,13 +25,18 @@
           <textarea placeholder="请详细描述您的症状、疾病和身体情况。(请放心您的个人信息不会泄露)"></textarea>
         </div>
       </div>
-      <div class="wrapImg">
-        <div>
-          <img src="../../../../static/img/添加图片.png" alt="">
-          <div class="uploadTip">
-            <h3>添加图片</h3>
-            <h5>上传相关照片</h5>
-          </div>
+      <div class="upload">
+        <div class="addPicture" v-for="(singleImage,index) in previewImg" v-if="previewImg.length != 0">
+          <!--<span class="deleteImg">X</span>-->
+          <img :src="singleImage" alt="" ref="replaceImg" @click="makeLarge(index)">
+        </div>
+        <div class="addPicture">
+          <input type="file" name="upload" id="upload" ref="upload" @change="onFileChange">
+          <img src="../../../../static/img/添加图片.png" alt=""  @click="selectImg()">
+        </div>
+        <div class="wordFor">
+          <span>添加图片</span>
+          <span>请上传患处图片,让医生更了解您的病情</span>
         </div>
       </div>
     </div>
@@ -47,7 +52,8 @@
         title:'添加病历',
         rightTitle:'保存',
         time:"",
-        date:""
+        date:"",
+        previewImg:[],
       }
     },
     mounted(){
@@ -69,7 +75,28 @@
       },
       detail(){
           this.$router.push('/detailPage')
-      }
+      },
+      selectImg(e){
+        this.$refs.upload.click()
+      },
+      onFileChange(e){
+        console.log(e)
+        var file = e.target.files[0]
+        this.createImage(file)
+      },
+      createImage(file){
+        if(typeof FileReader === "undefined"){
+          alert("您的浏览器不支持图片上传，请升级您的浏览器")
+          return false
+        }
+        let that = this
+        let fileName = file.name
+        let reader = new FileReader()
+        reader.readAsDataURL(file)
+        reader.onload = function(){
+          that.previewImg.push(this.result)
+        }
+      },
     },
     components:{
       'VHeader':header
@@ -87,6 +114,45 @@
     left:0;
     right:0;
     background-color: white;
+    .upload{
+      width: 690rem/$rem;
+      height: 460rem/$rem;
+      border-radius: 10px;
+      word-break: break-all;
+      position: relative;
+      margin: 30rem/$rem auto;
+      /*display: flex;*/
+      .addPicture{
+        float: left;
+        margin-right: 16.2px;
+        .deleteImg{
+          position: absolute;
+          top:0;
+          left:0;
+          background-color: #E64340;
+        }
+        >input{
+          display: none;
+        }
+        img{
+          width: 140rem/$rem;
+          height: 140rem/$rem;
+        }
+      }
+      .wordFor{
+        span:first-child{
+          font-size: 32rem/$rem;
+          color: #333333;
+          display: block;
+        }
+        span:last-child{
+          font-size: 28rem/$rem;
+          display: block;
+          margin-top: 14.5px;
+          color: #999999;
+        }
+      }
+    }
     .wrapTime{
       width:100%;
       height: 90rem/$rem;

@@ -1,7 +1,7 @@
 <template>
   <transition name="slide">
     <div>
-          <v-header :title="title" :rightTitle="rightTitle"></v-header>
+          <v-header :title="title" :rightTitle="rightTitle" @on-consult="goConsultList()"></v-header>
           <div class="want">
             <div class="basic border-1px">
               <div>
@@ -21,7 +21,7 @@
               <div>
                 就诊人
                 <div>
-                  <span>张三 男 24岁</span>
+                  <span>李文峰 男 24岁</span>
                   <img src="../../../static/img/查看更多.png" alt="">
                 </div>
               </div>
@@ -55,8 +55,12 @@
               </div>
             </div>
             <div class="upload">
+              <div class="addPicture" v-for="(singleImage,index) in previewImg" v-if="previewImg.length != 0">
+                <!--<span class="deleteImg">X</span>-->
+                <img :src="singleImage" alt="" ref="replaceImg" @click="makeLarge(index)">
+              </div>
               <div class="addPicture">
-                <input type="file" name="upload" id="upload" ref="upload" @change="onFileChange()">
+                <input type="file" name="upload" id="upload" ref="upload" @change="onFileChange">
                 <img src="../../../static/img/添加图片.png" alt=""  @click="selectImg()">
               </div>
               <div class="wordFor">
@@ -75,8 +79,35 @@
           return{
               title:"我要咨询",
               rightTitle:'立即提问',
-              description:""
+              description:"",
+               previewImg:[],
           }
+      },
+      methods:{
+        goConsultList(){
+           this.$router.push('/myConsult')
+        },
+        selectImg(e){
+            this.$refs.upload.click()
+        },
+        onFileChange(e){
+          console.log(e)
+          var file = e.target.files[0]
+          this.createImage(file)
+        },
+        createImage(file){
+          if(typeof FileReader === "undefined"){
+            alert("您的浏览器不支持图片上传，请升级您的浏览器")
+            return false
+          }
+          let that = this
+          let fileName = file.name
+          let reader = new FileReader()
+          reader.readAsDataURL(file)
+          reader.onload = function(){
+            that.previewImg.push(this.result)
+          }
+        },
       },
       components:{
           "VHeader":header

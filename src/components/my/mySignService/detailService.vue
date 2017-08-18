@@ -7,7 +7,7 @@
                 <router-link tag="div" to=" ">
                   <li>
                     <div class="cancelImg">
-                      <img src="../../../../static/img/chatOrigin.jpg" alt="">
+                      <img src="../../../../static/img/p2.jpg" alt="">
                     </div>
                     <div class="cancelIntro">
                       <div>
@@ -15,7 +15,7 @@
                         <!--<div class="badgeDoc">-->
                         <span class="myDoctor"></span>
                         <!--</div>-->
-                        <p>姓名：张三</p>
+                        <p>姓名：张文物</p>
                         <p>男 56岁</p>
                       </div>
                     </div>
@@ -51,26 +51,26 @@
                 <div>
                   定位
                   <div>
-                    <span>xxx社区附近</span>
+                    <span>红梅社区附近</span>
                     <!--<img src="../../../../static/img/查看更多.png" alt="">-->
                   </div>
                 </div>
               </div>
               <div class="imgArea border-1px">
                 <div class="imgCenter">
-                  <img src="../../../../static/img/chatOrigin.jpg" alt="">
-                  <img src="../../../../static/img/chatOrigin.jpg" alt="">
-                  <img src="../../../../static/img/chatOrigin.jpg" alt="">
-                  <img src="../../../../static/img/chatOrigin.jpg" alt="">
-                  <img src="../../../../static/img/chatOrigin.jpg" alt="">
-                  <img src="../../../../static/img/chatOrigin.jpg" alt="">
+                  <img src="../../../../static/img/c5.jpg" alt="">
+                  <img src="../../../../static/img/c3.jpg" alt="">
+                  <img src="../../../../static/img/c7.jpg" alt="">
+                  <img src="../../../../static/img/c2.jpg" alt="">
+                  <img src="../../../../static/img/c13.jpg" alt="">
+                  <img src="../../../../static/img/c10.jpg" alt="">
                 </div>
               </div>
               <div class="history border-1px">
                 <div>
                   结束时间
                   <div>
-                    <span>2017-8-3 8:58</span>
+                    <span>2017-8-5 13:58</span>
                     <!--<img src="../../../../static/img/查看更多.png" alt="">-->
                   </div>
                 </div>
@@ -79,19 +79,16 @@
                 <div>
                   定位
                   <div>
-                    <span>xxx社区附近</span>
+                    <span>红梅社区附近</span>
                     <!--<img src="../../../../static/img/查看更多.png" alt="">-->
                   </div>
                 </div>
               </div>
               <div class="imgArea border-1px">
                 <div class="imgCenter">
-                  <img src="../../../../static/img/chatOrigin.jpg" alt="">
-                  <img src="../../../../static/img/chatOrigin.jpg" alt="">
-                  <img src="../../../../static/img/chatOrigin.jpg" alt="">
-                  <img src="../../../../static/img/chatOrigin.jpg" alt="">
-                  <img src="../../../../static/img/chatOrigin.jpg" alt="">
-                  <img src="../../../../static/img/chatOrigin.jpg" alt="">
+                  <img src="../../../../static/img/c15.jpg" alt="">
+                  <img src="../../../../static/img/c16.jpg" alt="">
+                  <img src="../../../../static/img/c18.jpg" alt="">
                 </div>
               </div>
             </div>
@@ -105,7 +102,7 @@
       data(){
          return{
              title:"服务详情",
-             rightTitle:""
+             rightTitle:"评价"
          }
       },
       mounted(){
@@ -198,8 +195,8 @@
         }
       }
       img{
-        width: 40px;
-        height: 40px;
+        width: 80rem/$rem;
+        height: 80rem/$rem;
         border-radius: 50%;
       }
     }

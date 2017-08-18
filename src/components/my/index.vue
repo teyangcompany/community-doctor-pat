@@ -8,10 +8,10 @@
       <div class="myInfo">
          <div class="avatar border-1px">
             <div class="avatarCenter">
-              <img class="profile" src="../../../static/img/chatOrigin.jpg" alt="">
+              <img class="profile" src="../../../static/img/p1.jpg" alt="">
               <div class="rightWord">
                   <div>
-                    <span>张三</span><span>xxx小区</span><span>男 27岁</span>
+                    <span>孙八一</span><span>恒大绿洲小区</span><span>男 27岁</span>
                   </div>
                 <img class="look" src="../../../static/img/查看更多.png" alt="">
               </div>

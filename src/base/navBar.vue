@@ -1,7 +1,7 @@
 <template>
-  <div class="nav-bar border-1px">
+  <div class="nav-bar">
     <ul>
-      <li v-for="tagName in tagNames" class="border-1px-right">
+      <li v-for="tagName in tagNames">
         <router-link  tag="div" :to="tagName.tabLink">
           <span>{{ tagName.title1 }}</span>
         </router-link>
@@ -42,15 +42,18 @@
         justify-content: center;
         list-style-type: none;
         span{
-          font-size:16px;
+          font-size:32rem/$rem;
           color: #333333;
         }
         .router-link-active{
           height: 35px;
-          width:160rem/$rem;
+          width:375rem/$rem;
           line-height: 40px;
           text-align: center;
           border-bottom: 2px solid #0AACE9;
+          span{
+            color: #0AACE9;
+          }
         }
       }
     }

@@ -16,6 +16,24 @@
     <section class="nav"  @click="detailPage()" v-else-if="path == '/addRecord'">
       <span class="rightWord">{{rightTitle}}</span>
     </section>
+    <section class="nav"  @click="bookService()" v-else-if="path == '/index/signDoctor'">
+      <span class="rightWord">{{rightTitle}}</span>
+    </section>
+    <section class="nav"  @click="bookService()" v-else-if="path == '/index/recent'">
+      <span class="rightWord">{{rightTitle}}</span>
+    </section>
+    <section class="nav"  @click="goChat()" v-else-if="path == '/bookService'">
+      <span class="rightWord">{{rightTitle}}</span>
+    </section>
+    <section class="nav"  @click="goChat()" v-else-if="path == '/bookService1'">
+      <span class="rightWord">{{rightTitle}}</span>
+    </section>
+    <section class="nav"  @click="goMyConsult()" v-else-if="path == '/iWantConsult'">
+      <span class="rightWord">{{rightTitle}}</span>
+    </section>
+    <section class="nav"  @click="goSingle()" v-else-if="path == '/chat'">
+      <span class="rightWord">{{rightTitle}}</span>
+    </section>
     <section class="nav"  @click="apply()" v-else>
       <span class="rightWord">{{rightTitle}}</span>
     </section>
@@ -40,6 +58,18 @@
       this.path = this.$route.path
     },
     methods:{
+      bookService(){
+          this.$emit("on-look")
+      },
+      goSingle(){
+         this.$emit("on-single")
+      },
+      goMyConsult(){
+         this.$emit("on-consult")
+      },
+      goChat(){
+          this.$emit("on-chat")
+      },
       back(){
         this.$router.back(-1)
       },
@@ -72,7 +102,7 @@
     left:0;
     position: fixed;
     display: flex;
-    z-index:10;
+    z-index:100;
     section{
       text-align: center;
       .word{

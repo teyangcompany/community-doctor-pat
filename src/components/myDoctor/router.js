@@ -18,6 +18,7 @@ import onlineIndex from "../online/index"
 import myConsult from '../online/myConsult'
 import myIndex from "../my/index"
 import signSingle from './selectItem/signSingle'
+import bookService1 from './bookService1.vue'
 export default[
   {
      path:'',
@@ -53,6 +54,10 @@ export default[
         path:'/myIndex',
         component:myIndex
       },
+      {
+        path:"/institution",
+        component:institution
+      },
     ]
   },
   {
@@ -64,8 +69,8 @@ export default[
     component:bookService
   },
   {
-    path:"/institution",
-    component:institution
+    path:"/bookService1",
+    component:bookService1
   },
   {
     path:"/institutionDetail",

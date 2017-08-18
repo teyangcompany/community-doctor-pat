@@ -6,21 +6,21 @@
           <router-link tag="div" to="/chat">
             <li>
               <div class="cancelImg">
-                <img :src=" item.docAvatar " alt="">
+                <img src="../../../static/img/ys1.jpg" alt="">
               </div>
               <div class="cancelIntro">
                 <div>
-                  <span class="chatDoctor">{{ item.docName }}</span> <span class="doctorTitle">{{ item.docTitle }}</span>
+                  <span class="chatDoctor">华立</span> <span class="doctorTitle">主治</span>
                   <div class="badgeDoc">
                     <span class="myDoctor">签约</span>
                   </div>
-                  <p>您的全科分诊已经开始，点击进入</p>
+                  <p>[安排服务]</p>
                 </div>
               </div>
               <div class="cancelTime">
                 <div >
-                  <span class="year">13:45</span>
-                  <p class="time"><span class="badge">1</span></p>
+                  <span class="year">刚刚</span>
+                  <p class="time"><span class="badge">2</span></p>
                 </div>
               </div>
             </li>
@@ -30,21 +30,21 @@
           <router-link tag="div" to="/chat">
             <li>
               <div class="cancelImg">
-                <img :src=" item.docAvatar " alt="">
+                <img src="../../../static/img/ys2.jpg" alt="">
               </div>
               <div class="cancelIntro">
                 <div>
-                  <span class="chatDoctor">{{ item.docName }}</span> <span class="doctorTitle">{{ item.docTitle }}</span>
+                  <span class="chatDoctor">张康</span> <span class="doctorTitle">实习</span>
                   <div class="badgeDoc">
                     <span class="myDoctor">签约</span>
                   </div>
-                  <p>您的全科分诊已经开始，点击进入</p>
+                  <p>你问一下华医生吧，我和他说过了</p>
                 </div>
               </div>
               <div class="cancelTime">
                 <div >
                   <span class="year">13:45</span>
-                  <p class="time"><span class="badge">1</span></p>
+                  <!--<p class="time"><span class="badge">1</span></p>-->
                 </div>
               </div>
             </li>
@@ -54,21 +54,21 @@
           <router-link tag="div" to="/chat">
             <li>
               <div class="cancelImg">
-                <img :src=" item.docAvatar " alt="">
+                <img src="../../../static/img/ys3.jpg" alt="">
               </div>
               <div class="cancelIntro">
                 <div>
-                  <span class="chatDoctor">{{ item.docName }}</span> <span class="doctorTitle">{{ item.docTitle }}</span>
+                  <span class="chatDoctor">陈刚</span> <span class="doctorTitle">主治</span>
                   <div class="badgeDoc">
-                    <span class="myDoctor">签约</span>
+                    <!--<span class="myDoctor"></span>-->
                   </div>
-                  <p>您的全科分诊已经开始，点击进入</p>
+                  <p>[图片]</p>
                 </div>
               </div>
               <div class="cancelTime">
                 <div >
-                  <span class="year">13:45</span>
-                  <p class="time"><span class="badge">1</span></p>
+                  <span class="year">09:10</span>
+                  <!--<p class="time"><span class="badge">1</span></p>-->
                 </div>
               </div>
             </li>
@@ -78,21 +78,21 @@
           <router-link tag="div" to="/chat">
             <li>
               <div class="cancelImg">
-                <img :src=" item.docAvatar " alt="">
+                <img src="../../../static/img/ys4.jpg" alt="">
               </div>
               <div class="cancelIntro">
                 <div>
-                  <span class="chatDoctor">{{ item.docName }}</span> <span class="doctorTitle">{{ item.docTitle }}</span>
+                  <span class="chatDoctor">李爱国</span> <span class="doctorTitle">护工</span>
                   <div class="badgeDoc">
                     <span class="myDoctor">签约</span>
                   </div>
-                  <p>您的全科分诊已经开始，点击进入</p>
+                  <p>谢谢了，下个月还是这个时候就行</p>
                 </div>
               </div>
               <div class="cancelTime">
                 <div >
-                  <span class="year">13:45</span>
-                  <p class="time"><span class="badge">1</span></p>
+                  <span class="year">星期三</span>
+                  <!--<p class="time"><span class="badge">1</span></p>-->
                 </div>
               </div>
             </li>
@@ -102,21 +102,21 @@
           <router-link tag="div" to="/chat">
             <li>
               <div class="cancelImg">
-                <img :src=" item.docAvatar " alt="">
+                <img src="../../../static/img/ys5.jpg" alt="">
               </div>
               <div class="cancelIntro">
                 <div>
-                  <span class="chatDoctor">{{ item.docName }}</span> <span class="doctorTitle">{{ item.docTitle }}</span>
+                  <span class="chatDoctor">谢尚全</span> <span class="doctorTitle">主治</span>
                   <div class="badgeDoc">
-                    <span class="myDoctor">签约</span>
+                    <!--<span class="myDoctor">签约</span>-->
                   </div>
-                  <p>您的全科分诊已经开始，点击进入</p>
+                  <p>你可以找你签约的医生说一下</p>
                 </div>
               </div>
               <div class="cancelTime">
                 <div >
-                  <span class="year">13:45</span>
-                  <p class="time"><span class="badge">1</span></p>
+                  <span class="year">2017/8/7</span>
+                  <!--<p class="time"><span class="badge">1</span></p>-->
                 </div>
               </div>
             </li>
@@ -126,242 +126,51 @@
           <router-link tag="div" to="/chat">
             <li>
               <div class="cancelImg">
-                <img :src=" item.docAvatar " alt="">
+                <img src="../../../static/img/ys6.jpg" alt="">
               </div>
               <div class="cancelIntro">
                 <div>
-                  <span class="chatDoctor">{{ item.docName }}</span> <span class="doctorTitle">{{ item.docTitle }}</span>
+                  <span class="chatDoctor">赵乾坤</span> <span class="doctorTitle">护工</span>
                   <div class="badgeDoc">
                     <span class="myDoctor">签约</span>
                   </div>
-                  <p>您的全科分诊已经开始，点击进入</p>
+                  <p>好的</p>
                 </div>
               </div>
               <div class="cancelTime">
                 <div >
-                  <span class="year">13:45</span>
-                  <p class="time"><span class="badge">1</span></p>
+                  <span class="year">2017/6/2</span>
+                  <!--<p class="time"><span class="badge">1</span></p>-->
                 </div>
               </div>
             </li>
           </router-link>
         </ul>
-        <ul  class="border-1px" v-for="item in chatList">
-          <router-link tag="div" to="/chat">
-            <li>
-              <div class="cancelImg">
-                <img :src=" item.docAvatar " alt="">
-              </div>
-              <div class="cancelIntro">
-                <div>
-                  <span class="chatDoctor">{{ item.docName }}</span> <span class="doctorTitle">{{ item.docTitle }}</span>
-                  <div class="badgeDoc">
-                    <span class="myDoctor">签约</span>
-                  </div>
-                  <p>您的全科分诊已经开始，点击进入</p>
-                </div>
-              </div>
-              <div class="cancelTime">
-                <div >
-                  <span class="year">13:45</span>
-                  <p class="time"><span class="badge">1</span></p>
-                </div>
-              </div>
-            </li>
-          </router-link>
-        </ul>
-        <ul  class="border-1px" v-for="item in chatList">
-          <router-link tag="div" to="/chat">
-            <li>
-              <div class="cancelImg">
-                <img :src=" item.docAvatar " alt="">
-              </div>
-              <div class="cancelIntro">
-                <div>
-                  <span class="chatDoctor">{{ item.docName }}</span> <span class="doctorTitle">{{ item.docTitle }}</span>
-                  <div class="badgeDoc">
-                    <span class="myDoctor">签约</span>
-                  </div>
-                  <p>您的全科分诊已经开始，点击进入</p>
-                </div>
-              </div>
-              <div class="cancelTime">
-                <div >
-                  <span class="year">13:45</span>
-                  <p class="time"><span class="badge">1</span></p>
-                </div>
-              </div>
-            </li>
-          </router-link>
-        </ul>
-        <ul  class="border-1px" v-for="item in chatList">
-          <router-link tag="div" to="/chat">
-            <li>
-              <div class="cancelImg">
-                <img :src=" item.docAvatar " alt="">
-              </div>
-              <div class="cancelIntro">
-                <div>
-                  <span class="chatDoctor">{{ item.docName }}</span> <span class="doctorTitle">{{ item.docTitle }}</span>
-                  <div class="badgeDoc">
-                    <span class="myDoctor">签约</span>
-                  </div>
-                  <p>您的全科分诊已经开始，点击进入</p>
-                </div>
-              </div>
-              <div class="cancelTime">
-                <div >
-                  <span class="year">13:45</span>
-                  <p class="time"><span class="badge">1</span></p>
-                </div>
-              </div>
-            </li>
-          </router-link>
-        </ul>
-        <ul  class="border-1px" v-for="item in chatList">
-          <router-link tag="div" to="/chat">
-            <li>
-              <div class="cancelImg">
-                <img :src=" item.docAvatar " alt="">
-              </div>
-              <div class="cancelIntro">
-                <div>
-                  <span class="chatDoctor">{{ item.docName }}</span> <span class="doctorTitle">{{ item.docTitle }}</span>
-                  <div class="badgeDoc">
-                    <span class="myDoctor">签约</span>
-                  </div>
-                  <p>您的全科分诊已经开始，点击进入</p>
-                </div>
-              </div>
-              <div class="cancelTime">
-                <div >
-                  <span class="year">13:45</span>
-                  <p class="time"><span class="badge">1</span></p>
-                </div>
-              </div>
-            </li>
-          </router-link>
-        </ul>
-        <ul  class="border-1px" v-for="item in chatList">
-          <router-link tag="div" to="/chat">
-            <li>
-              <div class="cancelImg">
-                <img :src=" item.docAvatar " alt="">
-              </div>
-              <div class="cancelIntro">
-                <div>
-                  <span class="chatDoctor">{{ item.docName }}</span> <span class="doctorTitle">{{ item.docTitle }}</span>
-                  <div class="badgeDoc">
-                    <span class="myDoctor">签约</span>
-                  </div>
-                  <p>您的全科分诊已经开始，点击进入</p>
-                </div>
-              </div>
-              <div class="cancelTime">
-                <div >
-                  <span class="year">13:45</span>
-                  <p class="time"><span class="badge">1</span></p>
-                </div>
-              </div>
-            </li>
-          </router-link>
-        </ul>
-        <ul  class="border-1px" v-for="item in chatList">
-          <router-link tag="div" to="/chat">
-            <li>
-              <div class="cancelImg">
-                <img :src=" item.docAvatar " alt="">
-              </div>
-              <div class="cancelIntro">
-                <div>
-                  <span class="chatDoctor">{{ item.docName }}</span> <span class="doctorTitle">{{ item.docTitle }}</span>
-                  <div class="badgeDoc">
-                    <span class="myDoctor">签约</span>
-                  </div>
-                  <p>您的全科分诊已经开始，点击进入</p>
-                </div>
-              </div>
-              <div class="cancelTime">
-                <div >
-                  <span class="year">13:45</span>
-                  <p class="time"><span class="badge">1</span></p>
-                </div>
-              </div>
-            </li>
-          </router-link>
-        </ul>
-        <ul  class="border-1px" v-for="item in chatList">
-          <router-link tag="div" to="/chat">
-            <li>
-              <div class="cancelImg">
-                <img :src=" item.docAvatar " alt="">
-              </div>
-              <div class="cancelIntro">
-                <div>
-                  <span class="chatDoctor">{{ item.docName }}</span> <span class="doctorTitle">{{ item.docTitle }}</span>
-                  <div class="badgeDoc">
-                    <span class="myDoctor">签约</span>
-                  </div>
-                  <p>您的全科分诊已经开始，点击进入</p>
-                </div>
-              </div>
-              <div class="cancelTime">
-                <div >
-                  <span class="year">13:45</span>
-                  <p class="time"><span class="badge">1</span></p>
-                </div>
-              </div>
-            </li>
-          </router-link>
-        </ul>
-        <ul  class="border-1px" v-for="item in chatList">
-          <router-link tag="div" to="/chat">
-            <li>
-              <div class="cancelImg">
-                <img :src=" item.docAvatar " alt="">
-              </div>
-              <div class="cancelIntro">
-                <div>
-                  <span class="chatDoctor">{{ item.docName }}</span> <span class="doctorTitle">{{ item.docTitle }}</span>
-                  <div class="badgeDoc">
-                    <span class="myDoctor">签约</span>
-                  </div>
-                  <p>您的全科分诊已经开始，点击进入</p>
-                </div>
-              </div>
-              <div class="cancelTime">
-                <div >
-                  <span class="year">13:45</span>
-                  <p class="time"><span class="badge">1</span></p>
-                </div>
-              </div>
-            </li>
-          </router-link>
-        </ul>
-        <ul  class="border-1px" v-for="item in chatList">
-          <router-link tag="div" to="/chat">
-            <li>
-              <div class="cancelImg">
-                <img :src=" item.docAvatar " alt="">
-              </div>
-              <div class="cancelIntro">
-                <div>
-                  <span class="chatDoctor">{{ item.docName }}</span> <span class="doctorTitle">{{ item.docTitle }}</span>
-                  <div class="badgeDoc">
-                    <span class="myDoctor">签约</span>
-                  </div>
-                  <p>您的全科分诊已经开始，点击进入</p>
-                </div>
-              </div>
-              <div class="cancelTime">
-                <div >
-                  <span class="year">13:45</span>
-                  <p class="time"><span class="badge">1</span></p>
-                </div>
-              </div>
-            </li>
-          </router-link>
-        </ul>
+
+        <!--<ul  class="border-1px" v-for="item in chatList">-->
+          <!--<router-link tag="div" to="/chat">-->
+            <!--<li>-->
+              <!--<div class="cancelImg">-->
+                <!--<img :src=" item.docAvatar " alt="">-->
+              <!--</div>-->
+              <!--<div class="cancelIntro">-->
+                <!--<div>-->
+                  <!--<span class="chatDoctor">{{ item.docName }}</span> <span class="doctorTitle">{{ item.docTitle }}</span>-->
+                  <!--<div class="badgeDoc">-->
+                    <!--<span class="myDoctor">签约</span>-->
+                  <!--</div>-->
+                  <!--<p>您的全科分诊已经开始，点击进入</p>-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<div class="cancelTime">-->
+                <!--<div >-->
+                  <!--<span class="year">13:45</span>-->
+                  <!--<p class="time"><span class="badge">1</span></p>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</li>-->
+          <!--</router-link>-->
+        <!--</ul>-->
       </div>
     </div>
     <div class="myDoctorList" v-else-if="waitLoading == 1 && chatList.length == 0">
@@ -494,6 +303,10 @@
             }
           }
           p{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
             margin:0;
             color: #999999;
             font-size: 28rem/$rem;
@@ -518,6 +331,9 @@
             color: #999999;
           }
           p.time{
+            position: absolute;
+            left:100rem/$rem;
+            top:25rem/$rem;
             margin:0;
             text-align: right;
             span.badge{

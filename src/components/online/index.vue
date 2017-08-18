@@ -6,69 +6,22 @@
                <ul class="border-1px">
                  <li >
                    <div>
-                     <span class="picConsult">[男24岁][糖尿病]</span>
-                     <!--<span class="consultTim">2016/11/28 18:17</span>-->
-                   </div>
-                   <div class="mainContent">
-                     <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
-                   </div>
-                   <div class="ConsultRelate">
-
-                     <span class="name"><span class="circle"></span><span class="number">丁克峰</span><span>回答</span>  </span>
-                     <span class="money">1小时前创建 | 3条回复</span>
-                   </div>
-                 </li>
-               </ul>
-               <ul class="border-1px">
-                 <li >
-                   <div>
-                     <span class="picConsult">[男24岁][糖尿病]</span>
-                     <!--<span class="consultTim">2016/11/28 18:17</span>-->
-                   </div>
-                   <div class="mainContent">
-                     <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
-                   </div>
-                   <div class="ConsultRelate">
-
-                     <span class="name"><span class="circle"></span><span class="number">丁克峰</span><span>回答</span>  </span>
-                     <span class="money">1小时前创建 | 3条回复</span>
-                   </div>
-                 </li>
-               </ul>
-               <ul class="border-1px">
-                 <li >
-                   <div>
-                     <span class="picConsult">[男24岁][糖尿病]</span>
-                     <!--<span class="consultTim">2016/11/28 18:17</span>-->
-                   </div>
-                   <div class="mainContent">
-                     <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
-                   </div>
-                   <div class="ConsultRelate">
-
-                     <span class="name"><span class="circle"></span><span class="number">丁克峰</span><span>回答</span>  </span>
-                     <span class="money">1小时前创建 | 3条回复</span>
-                   </div>
-                 </li>
-               </ul>
-               <ul class="border-1px">
-                 <li >
-                   <div>
-                     <span class="picConsult">[男24岁][糖尿病]</span>
+                     <span class="picConsult">[孙八一 男 24岁][腰腿疼痛]</span>
                      <!--<span class="consultTim">2016/11/28 18:17</span>-->
                    </div>
                    <div class="mainContent">
                      <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
                      <div @click="makeLarge()">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
+                       <img src="../../../static/img/c11.jpg" alt="">
+                       <img src="../../../static/img/c12.jpg" alt="">
+                       <img src="../../../static/img/c13.jpg" alt="">
+                       <img src="../../../static/img/c14.jpg" alt="">
+                       <img src="../../../static/img/c15.jpg" alt="">
                      </div>
                    </div>
                    <div class="ConsultRelate">
 
-                     <span class="name"><span class="circle"></span><span class="number">丁克峰</span><span>回答</span>  </span>
+                     <span class="name"><span class="circle"></span><span class="number">华立</span><span>回答</span>  </span>
                      <span class="money">1小时前创建 | 3条回复</span>
                    </div>
                  </li>
@@ -76,21 +29,15 @@
                <ul class="border-1px">
                  <li >
                    <div>
-                     <span class="picConsult">[男24岁][糖尿病]</span>
+                     <span class="picConsult">[李世峰 男 28岁]</span>
                      <!--<span class="consultTim">2016/11/28 18:17</span>-->
                    </div>
                    <div class="mainContent">
                      <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
-                     <div @click="makeLarge()">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                     </div>
                    </div>
                    <div class="ConsultRelate">
 
-                     <span class="name"><span class="circle"></span><span class="number">丁克峰</span><span>回答</span>  </span>
+                     <span class="name"><span class="circle"></span><span class="number">张康</span><span>回答</span>  </span>
                      <span class="money">1小时前创建 | 3条回复</span>
                    </div>
                  </li>
@@ -98,21 +45,19 @@
                <ul class="border-1px">
                  <li >
                    <div>
-                     <span class="picConsult">[男24岁][糖尿病]</span>
+                     <span class="picConsult">[赵文武 女 30岁]</span>
                      <!--<span class="consultTim">2016/11/28 18:17</span>-->
                    </div>
                    <div class="mainContent">
                      <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
                      <div @click="makeLarge()">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
+                       <img src="../../../static/img/c16.jpg" alt="">
+                       <img src="../../../static/img/c17.jpg" alt="">
                      </div>
                    </div>
                    <div class="ConsultRelate">
 
-                     <span class="name"><span class="circle"></span><span class="number">丁克峰</span><span>回答</span>  </span>
+                     <span class="name"><span class="circle"></span><span class="number">李爱国</span><span>回答</span>  </span>
                      <span class="money">1小时前创建 | 3条回复</span>
                    </div>
                  </li>
@@ -120,21 +65,21 @@
                <ul class="border-1px">
                  <li >
                    <div>
-                     <span class="picConsult">[男24岁][糖尿病]</span>
+                     <span class="picConsult">[男 24岁][高血压]</span>
                      <!--<span class="consultTim">2016/11/28 18:17</span>-->
                    </div>
                    <div class="mainContent">
                      <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
                      <div @click="makeLarge()">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
+                       <img src="../../../static/img/c1.jpg" alt="">
+                       <img src="../../../static/img/c2.jpg" alt="">
+                       <img src="../../../static/img/c3.jpg" alt="">
+                       <img src="../../../static/img/c4.jpg" alt="">
                      </div>
                    </div>
                    <div class="ConsultRelate">
 
-                     <span class="name"><span class="circle"></span><span class="number">丁克峰</span><span>回答</span>  </span>
+                     <span class="name"><span class="circle"></span><span class="number">赵乾坤</span><span>回答</span>  </span>
                      <span class="money">1小时前创建 | 3条回复</span>
                    </div>
                  </li>
@@ -142,21 +87,19 @@
                <ul class="border-1px">
                  <li >
                    <div>
-                     <span class="picConsult">[男24岁][糖尿病]</span>
+                     <span class="picConsult">[男 24岁][肩周炎]</span>
                      <!--<span class="consultTim">2016/11/28 18:17</span>-->
                    </div>
                    <div class="mainContent">
                      <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
                      <div @click="makeLarge()">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
+                       <img src="../../../static/img/c5.jpg" alt="">
+                       <img src="../../../static/img/c6.jpg" alt="">
                      </div>
                    </div>
                    <div class="ConsultRelate">
 
-                     <span class="name"><span class="circle"></span><span class="number">丁克峰</span><span>回答</span>  </span>
+                     <span class="name"><span class="circle"></span><span class="number">洪国立</span><span>回答</span>  </span>
                      <span class="money">1小时前创建 | 3条回复</span>
                    </div>
                  </li>
@@ -164,21 +107,18 @@
                <ul class="border-1px">
                  <li >
                    <div>
-                     <span class="picConsult">[男24岁][糖尿病]</span>
+                     <span class="picConsult">[男 24岁][腰腿疼痛]</span>
                      <!--<span class="consultTim">2016/11/28 18:17</span>-->
                    </div>
                    <div class="mainContent">
                      <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
                      <div @click="makeLarge()">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
+                       <img src="../../../static/img/c7.jpg" alt="">
                      </div>
                    </div>
                    <div class="ConsultRelate">
 
-                     <span class="name"><span class="circle"></span><span class="number">丁克峰</span><span>回答</span>  </span>
+                     <span class="name"><span class="circle"></span><span class="number">陈理</span><span>回答</span>  </span>
                      <span class="money">1小时前创建 | 3条回复</span>
                    </div>
                  </li>
@@ -186,21 +126,20 @@
                <ul class="border-1px">
                  <li >
                    <div>
-                     <span class="picConsult">[男24岁][糖尿病]</span>
+                     <span class="picConsult">[男 24岁][关节炎]</span>
                      <!--<span class="consultTim">2016/11/28 18:17</span>-->
                    </div>
                    <div class="mainContent">
                      <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
                      <div @click="makeLarge()">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
+                       <img src="../../../static/img/c8.jpg" alt="">
+                       <img src="../../../static/img/c9.jpg" alt="">
+                       <img src="../../../static/img/c10.jpg" alt="">
                      </div>
                    </div>
                    <div class="ConsultRelate">
 
-                     <span class="name"><span class="circle"></span><span class="number">丁克峰</span><span>回答</span>  </span>
+                     <span class="name"><span class="circle"></span><span class="number">赵从</span><span>回答</span>  </span>
                      <span class="money">1小时前创建 | 3条回复</span>
                    </div>
                  </li>
@@ -208,21 +147,15 @@
                <ul class="border-1px">
                  <li >
                    <div>
-                     <span class="picConsult">[男24岁][糖尿病]</span>
+                     <span class="picConsult">[李世石 男 24岁][骨质疏松]</span>
                      <!--<span class="consultTim">2016/11/28 18:17</span>-->
                    </div>
                    <div class="mainContent">
                      <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
-                     <div @click="makeLarge()">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                     </div>
                    </div>
                    <div class="ConsultRelate">
 
-                     <span class="name"><span class="circle"></span><span class="number">丁克峰</span><span>回答</span>  </span>
+                     <span class="name"><span class="circle"></span><span class="number">谢尚全</span><span>回答</span>  </span>
                      <span class="money">1小时前创建 | 3条回复</span>
                    </div>
                  </li>
@@ -230,43 +163,18 @@
                <ul class="border-1px">
                  <li >
                    <div>
-                     <span class="picConsult">[男24岁][糖尿病]</span>
+                     <span class="picConsult">[赵青 男 24岁][糖尿病]</span>
                      <!--<span class="consultTim">2016/11/28 18:17</span>-->
                    </div>
                    <div class="mainContent">
                      <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
                      <div @click="makeLarge()">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
+                       <img src="../../../static/img/c18.jpg" alt="">
                      </div>
                    </div>
                    <div class="ConsultRelate">
 
-                     <span class="name"><span class="circle"></span><span class="number">丁克峰</span><span>回答</span>  </span>
-                     <span class="money">1小时前创建 | 3条回复</span>
-                   </div>
-                 </li>
-               </ul>
-               <ul class="border-1px">
-                 <li >
-                   <div>
-                     <span class="picConsult">[男24岁][糖尿病]</span>
-                     <!--<span class="consultTim">2016/11/28 18:17</span>-->
-                   </div>
-                   <div class="mainContent">
-                     <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
-                     <div @click="makeLarge()">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                       <img src="../../../static/img/chatOrigin.jpg" alt="">
-                     </div>
-                   </div>
-                   <div class="ConsultRelate">
-
-                     <span class="name"><span class="circle"></span><span class="number">丁克峰</span><span>回答</span>  </span>
+                     <span class="name"><span class="circle"></span><span class="number">陈刚</span><span>回答</span>  </span>
                      <span class="money">1小时前创建 | 3条回复</span>
                    </div>
                  </li>
@@ -394,7 +302,7 @@
       /*background-color: white;*/
       ul {
         /*margin-top: 10px;*/
-        margin-bottom: 10px;
+        /*padding-bottom: 5px;*/
         li {
           width: 690rem/$rem;
           /*height: 166px;*/
@@ -421,7 +329,7 @@
             >div{
               img{
                 width: 22.5%;
-                height: 22.5%;
+                height: 120rem/$rem;
               }
             }
             p {
@@ -443,8 +351,8 @@
               color: gray;
               .circle {
                 display: inline-block;
-                width: 12px;
-                height: 12px;
+                width: 10px;
+                height: 10px;
                 margin-right: 3px;
                 background-color: red;
                 border-radius: 50%;

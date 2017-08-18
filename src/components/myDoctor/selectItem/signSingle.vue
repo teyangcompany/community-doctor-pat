@@ -5,37 +5,37 @@
       <div>
         <div class="doctorFunc border-1px">
           <div class="doctorImg">
-            <img src="../../../../static/img/chatOrigin.jpg" alt="">
+            <img src="../../../../static/img/ys1.jpg" alt="">
           </div>
           <div class="doctorIntro">
-            <h4><span class="mainTitle">华佗</span><span class="chief">首席</span></h4>
-            <h6>全科 主任医生</h6>
-            <h6>杭州市xxx社区服务中心</h6>
+            <h4><span class="mainTitle">华立</span><span class="chief">首席</span></h4>
+            <h6>全科 主治医生</h6>
+            <h6>杭州市上城区紫阳卫生院</h6>
             <div class="checkRating"> <span>签约患者 </span><span class="number">296</span> <span>|</span> <span>评价</span> <span class="ratings">9.5分></span> </div>
           </div>
         </div>
         <div class="attachTeam border-1px">
           <div class="attachCenter">
             <span>所属团队</span>
-            <span class="number">华佗全科团队></span>
+            <span class="number">华立全科团队></span>
           </div>
         </div>
         <div class="institutionDes border-1px">
           <div class="desCenter team">
             <h4>医生公告</h4>
-            <h6>赛车运动赛车运动分为两大类，场地赛车和非场地赛车。起源距今已有超过100年的历史。最早的赛车比赛是在城市间的公路上进行的。</h6>
+            <h6>大家好！我团队在紫阳社区已经签约了近300名患者，好评达到9.5分以上。最近新推出了上门推拿理疗服务，欢迎各位周边的朋友签约我们团队！</h6>
           </div>
         </div>
         <div class="institutionDes border-1px">
           <div class="desCenter team">
             <h4>医生擅长</h4>
-            <h6>赛车运动赛车运动分为两大类，场地赛车和非场地赛车。起源距今已有超过100年的历史。最早的赛车比赛是在城市间的公路上进行的。</h6>
+            <h6>全科预防、慢病管理、体质检测。</h6>
           </div>
         </div>
         <div class="institutionDes border-1px">
           <div class="desCenter team">
             <h4>医生介绍</h4>
-            <h6>赛车运动赛车运动分为两大类，场地赛车和非场地赛车。起源距今已有超过100年的历史。最早的赛车比赛是在城市间的公路上进行的。</h6>
+            <h6>主治医师，硕士，国家二级公共营养师，国家二级心理咨询师。浙江生中医药学会青年委员，上城区重点学科后备学科带头人。已在社区服务7年，曾获得“2015年社区卫生服务之星”荣誉。</h6>
           </div>
         </div>
         <div class="border-1px articleListTitle">
@@ -48,11 +48,11 @@
           <ul class="border-1px">
             <li>
               <div class="mainContent">
-                <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查</p>
+                <p>孩子扁桃体发炎频繁肿大，割还是不割，春季小儿肺炎多发，怎么防浙江肺部医学中心帮您解决以上困惑</p>
               </div>
               <div class="ConsultRelate">
 
-                <span class="name"><span class="circle"></span>丁克峰</span>
+                <span class="name"><span class="circle"></span>华立</span>
                 <span class="money">阅读5281</span>
               </div>
             </li>
@@ -60,11 +60,11 @@
           <ul  class="border-1px">
             <li>
               <div class="mainContent">
-                <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查</p>
+                <p>"基础体温"不可少，调经备孕都需要，杭州何氏妇科治疗不孕症经验，如何挂到我的专家号</p>
               </div>
               <div class="ConsultRelate">
 
-                <span class="name"><span class="circle"></span>丁克峰</span>
+                <span class="name"><span class="circle"></span>华立</span>
                 <span class="money">阅读5281</span>
               </div>
             </li>
@@ -207,6 +207,8 @@
         width: 690rem/$rem;
         margin:0 auto;
         display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
         flex-direction: column;
         justify-content: center;
         h4,h6{
@@ -225,12 +227,12 @@
           }
         }
         h6{
-          font-size:28rem/$rem;
+          font-size:32rem/$rem;
           color: #999999;
         }
       }
       .team{
-        height:210rem/$rem;
+
       }
     }
     div.articleListTitle{
@@ -284,7 +286,7 @@
               -webkit-box-orient: vertical;
               -webkit-line-clamp: 2;
               overflow: hidden;
-              font-size: 15px;
+              font-size: 32rem/$rem;
               color: gray;
               height: 52px;
               /*padding-top: 5px;*/
@@ -298,8 +300,8 @@
               color: gray;
               .circle {
                 display: inline-block;
-                width: 12px;
-                height: 12px;
+                width: 10px;
+                height: 10px;
                 margin-right: 3px;
                 background-color: red;
                 border-radius: 50%;
@@ -307,7 +309,7 @@
             }
             span.money {
               font-size: 14px;
-              color: red;
+              color: #999999;
             }
           }
         }

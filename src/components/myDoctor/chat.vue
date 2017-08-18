@@ -1,20 +1,148 @@
 <template>
     <div>
-      <v-header :title="title" :rightTitle="rightTitle"> </v-header>
-      <div class="conversation">
+      <v-header :title="title" :rightTitle="rightTitle" @on-single="goSingle()"> </v-header>
+      <div class="conversation" @click="goDown()" ref="conversation">
         <section class="conversationList" ref="slideList" >
           <ul>
-            <li v-for="(item,index) in chatText" ref="chatLi">
+            <li ref="chatLi">
+              <div class=" other mysay">
+                <img src="../../../static/img/p1.jpg" alt="">
+                <div class="whatsay">
+                  <div class="whatsay_svg">
+                    <svg>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#trigon-right"></use>
+                    </svg>
+                  </div>
+                  <div class="whatsay_text">
+                    医生您好!在吗？
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!--<ul>-->
+            <!--<li v-for="(item,index) in chatText" ref="chatLi">-->
+              <!--<div class="other">-->
+                <!--<img src="../../../static/img/ys1.jpg" alt="" >-->
+                <!--<div class="whatsay">-->
+                  <!--<div class="whatsay_svg">-->
+                    <!--<svg>-->
+                      <!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#trigon-left"></use>-->
+                    <!--</svg>-->
+                  <!--</div>-->
+                  <!--<div class="whatsay_text">-->
+                    <!--{{item}}-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</li>-->
+          <!--</ul>-->
+          <ul>
+            <li  ref="chatLi">
               <div class="other">
-                <img src="../../../static/img/chatOrigin.jpg" alt="" >
+                <img src="../../../static/img/ys1.jpg" alt="" >
                 <div class="whatsay">
                   <div class="whatsay_svg">
                     <svg>
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#trigon-left"></use>
                     </svg>
                   </div>
+                  <div class="whatsay_text onlyThis">
+                    <div>
+                      2′53″
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li ref="chatLi">
+              <div class=" other mysay">
+                <img src="../../../static/img/p1.jpg" alt="">
+                <div class="whatsay">
+                  <div class="whatsay_svg">
+                    <svg>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#trigon-right"></use>
+                    </svg>
+                  </div>
                   <div class="whatsay_text">
-                    {{item}}
+                    我最近腰有点酸，站久了会发麻，想要问下您什么时候有空，我想做一个推拿理疗。
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li  ref="chatLi">
+              <div class="other">
+                <img src="../../../static/img/ys1.jpg" alt="" >
+                <div class="whatsay">
+                  <div class="whatsay_svg">
+                    <svg>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#trigon-left"></use>
+                    </svg>
+                  </div>
+                  <div class="whatsay_text onlyThis">
+                    <div>
+                      1′17″
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul v-if="displayPicked != undefined">
+            <li ref="chatLi">
+              <div class=" other mysay">
+                <img src="../../../static/img/p1.jpg" alt="">
+                <div class="whatsay">
+                  <div class="whatsay_svg">
+                    <svg>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#trigon-right"></use>
+                    </svg>
+                  </div>
+                  <div class="whatsay_text onlySquare">
+                    <div>
+                        <p class="border-1px">申请了一个服务</p>
+                         <p>{{ displayPicked }}</p>
+                         <span>共12次，剩余8次</span><br/>
+                      <span>{{ displayDate }}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li v-for="(item,index) in previewImg"  ref="chatLi">
+              <div class=" other mysay">
+                <img src="../../../static/img/p1.jpg" alt="">
+                <div class="whatsay">
+                  <div class="whatsay_svg">
+                    <svg>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#trigon-right"></use>
+                    </svg>
+                  </div>
+                  <div class="whatsay_text">
+                    <img :src="item" alt="">
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li v-for="(item,index) in chatText"  ref="chatLi">
+              <div class=" other mysay">
+                <img src="../../../static/img/p1.jpg" alt="">
+                <div class="whatsay">
+                  <div class="whatsay_svg">
+                    <svg>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#trigon-right"></use>
+                    </svg>
+                  </div>
+                  <div class="whatsay_text">
+                      {{item}}
                   </div>
                 </div>
               </div>
@@ -38,12 +166,13 @@
         </section>
         <section class="foot_bottom" v-if="gift">
           <div class="picture">
-            <input type="file" name="picture" id="upPicture" ref="picture" @change="sendPicture()">
-            <img src="../../../static/img/图片.png" alt="" @click="uploadPicture()">
+            <input type="file" name="picture" id="upPicture" ref="picture" @change="onFileChange">
+            <img src="../../../static/img/图片.png" alt="" @click="selectImg()">
             <span>图片</span>
           </div>
           <div class="camera">
-          <img src="../../../static/img/拍照.png" alt="">
+            <input type="file" name="picture"  ref="picture" @change="onFileChange">
+          <img src="../../../static/img/拍照.png" alt="" @click="selectImg()">
           <span>拍照</span>
           </div>
           <div class="camera" @click="goService()">
@@ -57,8 +186,7 @@
         </section>
         <section class="foot_bottom" v-else>
           <div class="picture">
-            <input type="file" name="picture" id="upPicture" ref="picture" @change="sendPicture()">
-            <img src="../../../static/img/图片.png" alt="" @click="uploadPicture()">
+            <img src="../../../static/img/图片.png" alt="" >
             <span>苹果</span>
             <span class="red">50心意</span>
           </div>
@@ -87,18 +215,34 @@
       data(){
         return{
             title:"李冰",
-            rightTitle:"患者详情",
+            rightTitle:"医生名片",
             seeMore:false,
             light:false,
             gift:true,
             inputInfo:"",
-            chatText:["你好","我有点问题想咨询下"]
+            chatText:[ ],
+            displayDate:"",
+            displayMessage:"",
+            displayPicked:"",
+             previewImg:[],
         }
       },
       components:{
           "VHeader":header
       },
+      created(){
+          this.displayDate = this.$route.query.date
+          this.displayMessage = this.$route.query.message
+          this.displayPicked = this.$route.query.picked
+          console.log(this.displayDate)
+      },
       methods:{
+        goSingle(){
+           this.$router.push('/signSingle')
+        },
+        goDown(){
+            this.seeMore = false
+        },
         whatInput(){
           if(this.inputInfo.replace(/\s+/g,"") == ''){
             this.light=false
@@ -114,6 +258,32 @@
         send(){
           this.chatText.push(this.inputInfo)
           this.inputInfo = ''
+          this.light=false
+          this.$nextTick(()=>{
+              console.log("123")
+            window.scrollTo(0,this.$refs.conversation.offsetHeight-window.innerHeight)
+          })
+        },
+        selectImg(e){
+          this.$refs.picture.click()
+        },
+        onFileChange(e){
+          console.log(e)
+          var file = e.target.files[0]
+          this.createImage(file)
+        },
+        createImage(file){
+          if(typeof FileReader === "undefined"){
+            alert("您的浏览器不支持图片上传，请升级您的浏览器")
+            return false
+          }
+          let that = this
+          let fileName = file.name
+          let reader = new FileReader()
+          reader.readAsDataURL(file)
+          reader.onload = function(){
+            that.previewImg.push(this.result)
+          }
         },
         upMore(){
             this.seeMore = !this.seeMore
@@ -125,7 +295,7 @@
             this.gift = false
         },
         goService(){
-            this.$router.push('/bookService')
+            this.$router.push('/bookService1')
         }
       },
   }
@@ -141,16 +311,19 @@
     top: 50px;
     bottom: 40px;
     overflow: hidden;
+    overflow-y: scroll;
     /*-webkit-overflow-scrolling: touch;*/
     /*overflow: auto;*/
     background-color: white;
     ul{
       padding:0;
       margin:0;
+      margin-top: 10px;
     }
   }
   .conversationList{
     width:100%;
+    overflow: auto;
     /*position: relative;*/
     .loadTip{
       width:100%;
@@ -186,12 +359,20 @@
         .whatsay{
           position: relative;
           margin-top: 0.4rem;
+          .onlyThis{
+            height: 50rem/$rem;
+            width:280rem/$rem;
+            >div{
+              position: absolute;
+              left: 210rem/$rem;
+            }
+          }
           .whatsay_svg{
             width:0.4266666667rem;
             height: 0.64rem;
             position: absolute;
             top:.5546667rem;
-            left:.53rem;
+            left:.63rem;
             z-index:2;
             svg{
               display:block;
@@ -225,7 +406,15 @@
           left:8.8rem;
         }
         .whatsay{
-
+          .onlySquare{
+            p{
+              font-size:32rem/$rem;
+            }
+            span{
+              font-size: 28rem/$rem;
+              color: #666666;
+            }
+          }
           .whatsay_svg{
             right: 0rem;
             left:auto;
@@ -299,16 +488,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 30px;
-        margin-top: 30px;
+        margin-left: 60rem/$rem;
+        margin-top: 60rem/$rem;
         img{
-          width: 57px;
-          height: 57px;
+          width: 114rem/$rem;
+          height: 114rem/$rem;
           display: block;
           margin-bottom: 15px;
         }
         span{
-          font-size: 14px;
+          font-size: 28rem/$rem;
           color:#666666
         }
         span.red{
@@ -316,7 +505,7 @@
           color: red;
         }
       }
-      .picture{
+      .picture,.camera{
         >input{
           display: none;
         }

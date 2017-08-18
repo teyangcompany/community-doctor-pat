@@ -10,7 +10,7 @@
            <div class="payBy border-1px">
                <div class="payByCenter">
                    <div>
-                     <img src="../../../../static/img/chatOrigin.jpg" alt="">
+                     <img src="../../../../static/img/weixin1.jpg" alt="">
                      <span>微信</span>
                    </div>
                  <div class="icon_sp_area">
@@ -67,7 +67,7 @@
        color: #999999;
      }
      span:last-child{
-       font-size: 32rem/$rem;
+       font-size: 36rem/$rem;
        color: #333333;
        font-weight: bold;
      }
@@ -104,11 +104,12 @@
          }
          img{
            margin-right: 5px;
+           width:60rem/$rem;
          }
        }
        img{
-         width: 30px;
-         height: 30px;
+         width: 50rem/$rem;
+         height: 50rem/$rem;
          border-radius: 50%;
        }
      }

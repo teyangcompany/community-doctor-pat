@@ -13,12 +13,14 @@
       </div>
       <div class="wrapText border-1px">
         <div>
-           <p>3212343242141242</p>
+           <p>最近身体不是太舒服，眼睛也很疼</p>
         </div>
       </div>
       <div class="wrapImg">
         <div>
-          <img src="../../../../static/img/chatOrigin.jpg" alt="">
+          <img src="../../../../static/img/c10.jpg" alt="">
+          <img src="../../../../static/img/c12.jpg" alt="">
+          <img src="../../../../static/img/c15.jpg" alt="">
         </div>
       </div>
     </div>

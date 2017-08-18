@@ -3,12 +3,15 @@
     <v-header :title="title" :rightTitle="rightTitle"></v-header>
     <div class="teamCard" ref="teamCard">
       <div>
+        <div class="headImg">
+          <img src="../../../../static/img/u409.png" alt="">
+        </div>
         <div class="card border-1px">
           <div>
-            <p>华佗全科团队</p>
-            <p class="insTitle">杭州市XXX社区服务中心</p>
+            <p>华立医生团队</p>
+            <p class="insTitle">杭州市滨江区住院部19楼</p>
             <div>
-              <span>签约患者 <span class="number">296</span></span>
+              <span>签约患者 <span class="number">666</span></span>
               <span class="border-1px-right"></span>
               <span>评价 <span class="ratings">9.3分></span></span>
             </div>
@@ -17,54 +20,54 @@
         <div class="institutionDes border-1px">
           <div class="desCenter team">
             <h4>团队擅长</h4>
-            <h6>赛车运动赛车运动分为两大类，场地赛车和非场地赛车。起源距今已有超过100年的历史。最早的赛车比赛是在城市间的公路上进行的。</h6>
+            <h6>全科预防、慢病管理、体质检测</h6>
           </div>
         </div>
         <div class="institutionDes border-1px">
           <div class="desCenter team">
             <h4>团队介绍</h4>
-            <h6>赛车运动赛车运动分为两大类，场地赛车和非场地赛车。起源距今已有超过100年的历史。最早的赛车比赛是在城市间的公路上进行的。</h6>
+            <h6>华立全科团队是一支年轻的、充满活力的、专注于慢病管理、全科健康预诊的社区服务团队</h6>
           </div>
         </div>
         <div class="institutionDes border-1px">
           <div class="desCenter">
-            <h4>团队成员(4位) <span>查看更多<img src="../../../../static/img/查看更多.png" alt=""></span> </h4>
+            <h4 class="teamMember">团队成员(6位) <span>查看更多<img src="../../../../static/img/查看更多.png" alt=""></span> </h4>
             <div>
               <router-link tag="div" to="/signSingle">
-                <img src="../../../../static/img/chatOrigin.jpg" alt="">
-                <span class="name">华佗<span class="chief ratings">首席</span></span>
+                <img src="../../../../static/img/ys1.jpg" alt="">
+                <span class="name">华立<span class="chief ratings">首席</span></span>
                 <span>全科</span>
                 <span>主治医生</span>
               </router-link>
               <router-link tag="div" to="/signSingle">
-                <img src="../../../../static/img/chatOrigin.jpg" alt="">
-                <span class="name">张三<span class="chief empty ratings"></span></span>
+                <img src="../../../../static/img/ys2.jpg" alt="">
+                <span class="name">张康<span class="chief empty ratings"></span></span>
                 <span>全科</span>
                 <span>实习医生</span>
               </router-link>
               <router-link tag="div" to="/signSingle">
-                <img src="../../../../static/img/chatOrigin.jpg" alt="">
-                <span class="name">李四<span class="chief empty ratings"></span></span>
-                <span>全科</span>
+                <img src="../../../../static/img/ys3.jpg" alt="">
+                <span class="name">李爱国<span class="chief empty ratings"></span></span>
+                <span></span>
                 <span>护工</span>
               </router-link>
               <router-link tag="div" to="/signSingle">
-                <img src="../../../../static/img/chatOrigin.jpg" alt="">
-                <span class="name">张无<span class="chief ratings">首席</span></span>
-                <span>全科</span>
-                <span>主治医生</span>
+                <img src="../../../../static/img/ys4.jpg" alt="">
+                <span class="name">赵乾坤<span class="chief empty ratings"></span></span>
+                <span></span>
+                <span>护工</span>
               </router-link>
               <router-link tag="div" to="/signSingle">
-                <img src="../../../../static/img/chatOrigin.jpg" alt="">
-                <span class="name">张无<span class="chief ratings">首席</span></span>
+                <img src="../../../../static/img/ys5.jpg" alt="">
+                <span class="name">吴魏<span class="chief empty ratings"></span></span>
                 <span>全科</span>
-                <span>主治医生</span>
+                <span>实习医生</span>
               </router-link>
               <router-link tag="div" to="/signSingle">
-                <img src="../../../../static/img/chatOrigin.jpg" alt="">
-                <span class="name">张无<span class="chief ratings">首席</span></span>
-                <span>全科</span>
-                <span>主治医生</span>
+                <img src="../../../../static/img/ys6.jpg" alt="">
+                <span class="name">张莉<span class="chief empty ratings"></span></span>
+                <span></span>
+                <span>护工</span>
               </router-link>
             </div>
           </div>
@@ -79,11 +82,11 @@
           <ul class="border-1px">
             <li>
               <div class="mainContent">
-                <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查</p>
+                <p>孩子扁桃体发炎频繁肿大，割还是不割，春季小儿肺炎多发，怎么防浙江肺部医学中心帮您解决以上困惑</p>
               </div>
               <div class="ConsultRelate">
 
-                <span class="name number"><span class="circle"></span>丁克峰</span>
+                <span class="name number"><span class="circle"></span>华佗</span>
                 <span class="money">阅读5281</span>
               </div>
             </li>
@@ -95,11 +98,11 @@
                 <!--<span class="consultTim">查看更多</span>-->
               <!--</div>-->
               <div class="mainContent">
-                <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查</p>
+                <p>"基础体温"不可少，调经备孕都需要，杭州何氏妇科治疗不孕症经验，如何挂到我的专家号</p>
               </div>
               <div class="ConsultRelate">
 
-                <span class="name number"><span class="circle"></span>丁克峰</span>
+                <span class="name number"><span class="circle"></span>华佗</span>
                 <span class="money">阅读5281</span>
               </div>
             </li>
@@ -124,7 +127,11 @@
          }
       },
       mounted(){
-        this._initArticleScroll()
+          this.$nextTick(()=>{
+              setTimeout(()=>{
+                this._initArticleScroll()
+              },100)
+          })
       },
       methods:{
           _initArticleScroll(){
@@ -156,6 +163,12 @@
     left:0;
     right:0;
     overflow: hidden;
+    .headImg{
+      width:100%;
+      img{
+        width:100%;
+      }
+    }
     .card{
       width:100%;
       height:250rem/$rem;
@@ -202,13 +215,16 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        .teamMember{
+          margin-top: 5px;
+        }
         h4,h6{
           margin:0;
           padding:0;
           font-weight: normal;
         }
         h4{
-          font-size: 28rem/$rem;
+          font-size: 32rem/$rem;
           color: #333333;
           font-family: PingFangSC;
           /*margin-top: 5px;*/
@@ -224,13 +240,15 @@
           }
         }
         h6{
-          font-size:28rem/$rem;
+          font-size:32rem/$rem;
           color: #999999;
           /*margin-top: 5px;*/
         }
         >div{
           display: flex;
           flex-wrap:wrap ;
+          margin-top: 15px;
+          margin-bottom: 15px;
           >div{
             display: flex;
             flex-direction: column;
@@ -316,7 +334,7 @@
               -webkit-box-orient: vertical;
               -webkit-line-clamp: 2;
               overflow: hidden;
-              font-size: 15px;
+              font-size: 32rem/$rem;
               color: gray;
               height: 52px;
               /*background-color: #E64340;*/
@@ -331,8 +349,8 @@
               color: gray;
               .circle {
                 display: inline-block;
-                width: 12px;
-                height: 12px;
+                width: 10px;
+                height: 10px;
                 margin-right: 3px;
                 background-color: red;
                 border-radius: 50%;
@@ -340,7 +358,7 @@
             }
             span.money {
               font-size: 14px;
-              color: red;
+              color: #999999;
             }
           }
         }

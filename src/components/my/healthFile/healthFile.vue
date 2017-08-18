@@ -7,12 +7,12 @@
         <ul>
           <li>
             <div class="cancelImg">
-              <img src="../../../../static/img/chatOrigin.jpg" alt="">
+              <img src="../../../../static/img/p1.jpg" alt="">
             </div>
             <div class="cancelIntro">
               <div class="introTitle">
                 <span class="subTitle">王小仙</span>
-                <p>姓名:李冰</p>
+                <p>姓名:孙八一</p>
                 <p>男 27岁 浙江杭州</p>
               </div>
             </div>
@@ -27,7 +27,7 @@
           <div>
             所患疾病
             <div>
-              <span>精神外科</span>
+              <span>未填写</span>
               <img src="../../../../static/img/查看更多.png" alt="">
             </div>
           </div>
@@ -70,52 +70,36 @@
             <p class="listContent">我最近因为经常在晚上看书，光线又十分不明亮的时候看导致最近视力降的很快</p>
             <div class="recordImg">
               <div>
-                <img src="../../../../static/img/chatOrigin.jpg" alt="">
+                <img src="../../../../static/img/c3.jpg" alt="">
               </div>
               <div>
-                <img src="../../../../static/img/chatOrigin.jpg" alt="">
+                <img src="../../../../static/img/c9.jpg" alt="">
               </div>
               <div>
-                <img src="../../../../static/img/chatOrigin.jpg" alt="">
+                <img src="../../../../static/img/c10.jpg" alt="">
               </div>
               <div>
-                <img src="../../../../static/img/chatOrigin.jpg" alt="">
+                <img src="../../../../static/img/c6.jpg" alt="">
               </div>
               <div>
-                <img src="../../../../static/img/chatOrigin.jpg" alt="">
+                <img src="../../../../static/img/c3.jpg" alt="">
               </div>
-              <div>
-                <img src="../../../../static/img/chatOrigin.jpg" alt="">
-              </div>
-              <div>
-                <img src="../../../../static/img/chatOrigin.jpg" alt="">
-              </div>
-
             </div>
           </div>
         </router-link>
         <router-link tag="div" class="recordList border-1px" to="/deleteRecord">
           <div class="wrapList">
             <p class="listTime number">2017-13-12</p>
-            <p class="listContent">我最近因为经常在晚上看书，光线又十分不明亮的时候看导致最近视力降的很快</p>
+            <p class="listContent">腰腿疼属于一种非常常见的疾病，主要是在突然用力过猛的时候容易出现，并且身体瞬间感觉到向闪电一样的疼痛，然后直接放射到臀部、大腿最后到小脚趾</p>
             <div class="recordImg">
               <div>
-                <img src="../../../../static/img/chatOrigin.jpg" alt="">
+                <img src="../../../../static/img/c1.jpg" alt="">
               </div>
               <div>
-                <img src="../../../../static/img/chatOrigin.jpg" alt="">
+                <img src="../../../../static/img/c2.jpg" alt="">
               </div>
               <div>
-                <img src="../../../../static/img/chatOrigin.jpg" alt="">
-              </div>
-              <div>
-                <img src="../../../../static/img/chatOrigin.jpg" alt="">
-              </div>
-              <div>
-                <img src="../../../../static/img/chatOrigin.jpg" alt="">
-              </div>
-              <div>
-                <img src="../../../../static/img/chatOrigin.jpg" alt="">
+                <img src="../../../../static/img/c5.jpg" alt="">
               </div>
             </div>
           </div>
@@ -299,8 +283,8 @@
             width: 25%;
             text-align: center;
             img{
-              width: 70px;
-              height: 70px;
+              width: 140rem/$rem;
+              height: 140rem/$rem;
             }
           }
         }

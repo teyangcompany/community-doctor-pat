@@ -3,20 +3,20 @@
       <ul class="border-1px">
         <li >
           <div>
-            <span class="picConsult">[李俊基 男 24岁][糖尿病]</span>
+            <span class="picConsult">[孙八一 男 24岁][糖尿病]</span>
             <span class="consultTim">¥50</span>
           </div>
           <div class="mainContent">
             <p>我有一个问题想要咨询一下，是这样的，去年我在我们那里的医院做了一个检查，你知道德玛关于这个事情，比较复杂的你知道吗</p>
             <div>
-              <img src="../../../static/img/chatOrigin.jpg" alt="">
-              <img src="../../../static/img/chatOrigin.jpg" alt="">
-              <img src="../../../static/img/chatOrigin.jpg" alt="">
+              <img src="../../../static/img/c10.jpg" alt="">
+              <img src="../../../static/img/c9.jpg" alt="">
+              <img src="../../../static/img/c8.jpg" alt="">
             </div>
           </div>
           <div class="ConsultRelate">
 
-            <span class="name"><span class="circle"></span>丁克峰回答</span>
+            <span class="name"><span class="circle"></span><span class="number">华立</span>回答</span>
             <span class="money">1小时前创建 | 3条回复</span>
           </div>
         </li>
@@ -37,8 +37,8 @@
    z-index:200;
    background-color: #FFFFFF;
    ul {
-     margin-top: 10px;
-     margin-bottom: 10px;
+     /*margin-top: 10px;*/
+     /*margin-bottom: 10px;*/
      li {
        width: 690rem/$rem;
        /*height: 166px;*/
@@ -65,7 +65,7 @@
          >div{
            img{
              width: 22.5%;
-             height: 22.5%;
+             height: 120rem/$rem;
            }
          }
          p {
@@ -87,8 +87,8 @@
            color: gray;
            .circle {
              display: inline-block;
-             width: 12px;
-             height: 12px;
+             width: 10px;
+             height: 10px;
              margin-right: 3px;
              background-color: red;
              border-radius: 50%;
@@ -102,4 +102,7 @@
      }
    }
  }
+  .number{
+    color: #3399FF!important;
+  }
 </style>

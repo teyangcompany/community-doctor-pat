@@ -8,15 +8,15 @@
           <router-link tag="div" to="/mySignService">
             <li>
               <div class="cancelImg">
-                <img src="../../../../static/img/chatOrigin.jpg" alt="">
+                <img src="../../../../static/img/ys1.jpg" alt="">
               </div>
               <div class="cancelIntro">
                 <div>
-                  <span class="followName">华佗全科团队</span>
+                  <span class="followName">华立全科团队</span>
                   <!--<div class="badgeDoc">-->
                   <!--<span class="myDoctor"></span>-->
                   <!--</div>-->
-                  <p>杭州市xxxx社区服务中心</p>
+                  <p>杭州市上城区紫阳卫生院</p>
                   <p>签约患者 <span class="number">296</span>  | 评价 <span class="ratings"> 9.5分></span></p>
                 </div>
               </div>
@@ -97,7 +97,7 @@
             <div class="listCenter">
                 <div class="leftWord">
                     <p>2017-8-3 8:58 - 2017-8-3 9:30</p>
-                    <p><img src="../../../../static/img/chatOrigin.jpg" alt="">张三 上门服务</p>
+                    <p><img src="../../../../static/img/ys1.jpg" alt="">华立 上门服务</p>
                 </div>
                 <div class="rightWord">
                     详细 <img src="../../../../static/img/查看更多.png" alt="">
@@ -108,7 +108,7 @@
           <div class="listCenter">
             <div class="leftWord">
               <p>2017-8-3 8:58 - 2017-8-3 9:30</p>
-              <p><img src="../../../../static/img/chatOrigin.jpg" alt="">张三 电话咨询</p>
+              <p><img src="../../../../static/img/ys2.jpg" alt="">张康 电话咨询</p>
             </div>
             <div class="rightWord">
               详细 <img src="../../../../static/img/查看更多.png" alt="">
@@ -119,7 +119,7 @@
           <div class="listCenter">
             <div class="leftWord">
               <p>2017-8-3 8:58 - 2017-8-3 9:30</p>
-              <p><img src="../../../../static/img/chatOrigin.jpg" alt="">张三 电话咨询</p>
+              <p><img src="../../../../static/img/ys3.jpg" alt="">李爱国 电话咨询</p>
             </div>
             <div class="rightWord">
               详细 <img src="../../../../static/img/查看更多.png" alt="">
@@ -130,7 +130,7 @@
           <div class="listCenter">
             <div class="leftWord">
               <p>2017-8-3 8:58 - 2017-8-3 9:30</p>
-              <p><img src="../../../../static/img/chatOrigin.jpg" alt="">张三 图文咨询</p>
+              <p><img src="../../../../static/img/ys4.jpg" alt="">赵乾坤 图文咨询</p>
             </div>
             <div class="rightWord">
               详细 <img src="../../../../static/img/查看更多.png" alt="">
@@ -141,7 +141,7 @@
           <div class="listCenter">
             <div class="leftWord">
               <p>2017-8-3 8:58 - 2017-8-3 9:30</p>
-              <p><img src="../../../../static/img/chatOrigin.jpg" alt="">张三 上门服务</p>
+              <p><img src="../../../../static/img/ys5.jpg" alt="">陈刚 上门服务</p>
             </div>
             <div class="rightWord">
               详细 <img src="../../../../static/img/查看更多.png" alt="">
@@ -152,7 +152,7 @@
           <div class="listCenter">
             <div class="leftWord">
               <p>2017-8-3 8:58 - 2017-8-3 9:30</p>
-              <p><img src="../../../../static/img/chatOrigin.jpg" alt="">张三 电话咨询</p>
+              <p><img src="../../../../static/img/ys6.jpg" alt="">谢尚全 电话咨询</p>
             </div>
             <div class="rightWord">
               详细 <img src="../../../../static/img/查看更多.png" alt="">
@@ -163,7 +163,7 @@
           <div class="listCenter">
             <div class="leftWord">
               <p>2017-8-3 8:58 - 2017-8-3 9:30</p>
-              <p><img src="../../../../static/img/chatOrigin.jpg" alt=""> 张三 图文咨询</p>
+              <p><img src="../../../../static/img/ys7.jpg" alt="">华立 图文咨询</p>
             </div>
             <div class="rightWord">
               详细 <img src="../../../../static/img/查看更多.png" alt="">
@@ -280,8 +280,8 @@
         }
       }
       img{
-        width: 40px;
-        height: 40px;
+        width: 80rem/$rem;
+        height: 80rem/$rem;
         border-radius: 50%;
       }
     }

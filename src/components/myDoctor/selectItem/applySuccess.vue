@@ -11,7 +11,7 @@
           </div>
           <div class="weui-msg__opr-area">
             <p class="weui-btn-area">
-              <a href="javascript:history.back();" class="weui-btn weui-btn_default">我知道了</a>
+              <a href="javascript:;" class="weui-btn weui-btn_default" @click="goDoctorList()">我知道了</a>
             </p>
           </div>
         </div>
@@ -21,7 +21,11 @@
 </template>
 <script>
   export default{
-
+     methods:{
+       goDoctorList(){
+         this.$router.push('/index/signDoctor')
+       }
+     }
   }
 
 </script>

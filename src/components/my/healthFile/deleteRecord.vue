@@ -13,21 +13,15 @@
       </div>
       <div class="wrapText border-1px">
         <div>
-          <textarea placeholder="请详细描述您的症状、疾病和身体情况。(请放心您的个人信息不会泄露)"></textarea>
+          <textarea placeholder="我最近因为经常在晚上看书，光线又十分不明亮的时候看导致最近视力降的很快"></textarea>
         </div>
       </div>
       <div class="wrapImg">
         <div>
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-
+          <img src="../../../../static/img/c5.jpg" alt="">
+          <img src="../../../../static/img/c7.jpg" alt="">
+          <img src="../../../../static/img/c9.jpg" alt="">
+          <img src="../../../../static/img/c10.jpg" alt="">
         </div>
       </div>
       <div class="logPeople">

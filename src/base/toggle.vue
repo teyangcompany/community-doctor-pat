@@ -3,14 +3,14 @@
   <my-popup :show="showPat" @activate="close">
     <div slot="contain" class="contain">
       <div class="title">
-        <p class="m light border-1px">请选择就诊人</p>
+        <p class="m light border-1px">请选择签约人</p>
       </div>
       <div class="main" id="wrapper">
         <div>
           <div v-for="(item,index) in patList" @click="check(index)">
             <p class="dark border-1px">{{item}}</p>
           </div>
-          <p class="lightBlue border-1px" @click="addPat()">添加就诊人<span><img src="../../static/img/add.png"></span></p>
+          <p class="lightBlue border-1px" @click="addPat()" v-if="path !='/bookService'">添加就诊人<span><img src="../../static/img/add.png"></span></p>
         </div>
       </div>
       <div class="ft">
@@ -23,6 +23,11 @@
   import MyPopup from "./pop.vue";
   import IScroll from 'iscroll'
   export default({
+    data(){
+       return{
+         path:""
+       }
+    },
     components:{
       MyPopup
     },
@@ -38,15 +43,18 @@
         required:true
       }
     },
+    mounted(){
+      this.path = this.$route.path
+    },
     methods:{
-      _initPatient(){
-         this.myScroll = new IScroll("#wrapper",{
-           mouseWheel: true,
-           momentum:true,
-           useTransition:true,
-           click:true
-         })
-      },
+//      _initPatient(){
+//         this.myScroll = new IScroll("#wrapper",{
+//           mouseWheel: true,
+//           momentum:true,
+//           useTransition:true,
+//           click:true
+//         })
+//      },
       check(index){
         this.$emit("activate",index);
       },
@@ -64,12 +72,8 @@
       }
     },
     watch:{
-      showPat(){
-          this.$nextTick(()=>{
-             setTimeout(()=>{
-               this._initPatient()
-             },100)
-          })
+      "$route":function(){
+        this.path = this.$route.path
       }
     }
   })
@@ -109,7 +113,7 @@
       /*height:10rem;*/
       /*width:100%;*/
       flex: 1 1 auto;
-      overflow:hidden;
+      /*overflow:hidden;*/
     }
   }
 </style>

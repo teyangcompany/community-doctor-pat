@@ -18,7 +18,7 @@
              <div>
                签约团队
                <div>
-                 <span class="number">华佗全科团队</span>
+                 <span class="number">华立全科团队</span>
                </div>
              </div>
            </div>
@@ -40,57 +40,40 @@
            </div>
            <div class="wrapSort  border-1px">
                <div class="sortService">
-                 <div class=" weui-cells_checkbox">
-                   <label class="weui-cell weui-check__label" for="s11">
-                     <div class="weui-cell__hd">
-                       <input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked"/>
-                       <i class="weui-icon-checked"></i>
-                     </div>
-                     <div class="weui-cell__bd special">
-                       <p>  <span>电话咨询</span> <span class="number">3次/月</span></p>
-                       <p>这里是服务介绍:比赛目的是尽量将足球射入对方的球门内，每射入一球就可以得到一分，当比赛完毕后，得分最多的一队则胜出。如果在比赛规定时间内得分相同，则须看比赛章则而定，</p>
-                     </div>
-                   </label>
-                   <label class="weui-cell weui-check__label" for="s12">
-                     <div class="weui-cell__hd">
-                       <input type="checkbox" name="checkbox1" class="weui-check" id="s12" checked="checked"/>
-                       <i class="weui-icon-checked"></i>
-                     </div>
-                     <div class="weui-cell__bd special">
-                       <p><span>电话咨询</span> <span class="number">3次/月</span><p>
-                       <p>这里是服务介绍:比赛目的是尽量将足球射入对方的球门内，每射入一球就可以得到一分，当比赛完毕后，得分最多的一队则胜出。如果在比赛规定时间内得分相同，则须看比赛章则而定，</p></p>
-                     </div>
-                   </label>
-                   <label class="weui-cell weui-check__label" for="s13">
-                     <div class="weui-cell__hd">
-                       <input type="checkbox" name="checkbox1" class="weui-check" id="s13" checked="checked"/>
-                       <i class="weui-icon-checked"></i>
-                     </div>
-                     <div class="weui-cell__bd special">
-                       <p><span>电话咨询</span> <span class="number">3次/月</span><p>
-                       <p>这里是服务介绍:比赛目的是尽量将足球射入对方的球门内，每射入一球就可以得到一分，当比赛完毕后，得分最多的一队则胜出。如果在比赛规定时间内得分相同，则须看比赛章则而定，</p></p>
-                     </div>
-                   </label>
-                   <label class="weui-cell weui-check__label" for="s14">
-                     <div class="weui-cell__hd">
-                       <input type="checkbox" name="checkbox1" class="weui-check" id="s14" checked="checked"/>
-                       <i class="weui-icon-checked"></i>
-                     </div>
-                     <div class="weui-cell__bd special">
-                       <p><span>电话咨询</span> <span class="number">3次/月</span><p>
-                       <p>这里是服务介绍:比赛目的是尽量将足球射入对方的球门内，每射入一球就可以得到一分，当比赛完毕后，得分最多的一队则胜出。如果在比赛规定时间内得分相同，则须看比赛章则而定，</p></p>
-                     </div>
-                   </label>
-                 </div>
 
+                     <i class="weui-icon-success weuiSuccess"></i>
+
+                 <div class="rightChecked">
+                   <p>  <span>图文咨询</span> <span class="number">不限次数</span></p>
+                   <p>提供免费的图文咨询服务，承诺团队会在24小时内做出回应，解决大家的问题。</p>
+                 </div>
                </div>
            </div>
+           <div class="wrapSort  border-1px">
+             <div class="sortService">
 
+                 <i class="weui-icon-success weuiSuccess"></i>
+
+               <div class="rightChecked">
+                 <p>  <span>电话咨询</span> <span class="number">3次/月</span></p>
+                 <p>提供每月3次电话咨询服务，可以帮助大家解答健康方面的问题。</p>
+               </div>
+             </div>
+           </div>
+           <div class="wrapSort  border-1px">
+             <div class="sortService">
+                 <i class="weui-icon-success weuiSuccess"></i>
+               <div class="rightChecked">
+                 <p>  <span>上门服务</span> <span class="number">1次/月</span></p>
+                 <p>每月提供1次上门探访，可以测量血糖血压、心理疏导等。</p>
+               </div>
+             </div>
+           </div>
            <div class="family basic">
              <div>
                扩展服务
                <div>
-                 <span>已选1项</span>,<span>增加 <span class="sumMoney">￥100/年</span></span>
+                 <span>已选<span class="number">{{  pickedItem  }}</span>项</span>,<span>增加 <span class="sumMoney big" ref="addBy">￥{{subtotal}}/年</span></span>
                </div>
              </div>
            </div>
@@ -99,50 +82,38 @@
                  <div class=" weui-cells_checkbox">
                    <label class="weui-cell weui-check__label" for="s15">
                      <div class="weui-cell__hd">
-                       <input type="checkbox" class="weui-check" name="checkbox1" id="s15"/>
+                       <input type="checkbox" class="weui-check" name="checkbox1" id="s15" value="500" v-model="pickedValue"/>
                        <i class="weui-icon-checked"></i>
                      </div>
                      <div class="weui-cell__bd special">
                        <div>
                          <span>推拿理疗 <span class="number">1次/月</span></span><span class="sumMoney">+￥500/年</span>
                        </div>
-                       <p>这里是服务介绍:比赛目的是尽量将足球射入对方的球门内，每射入一球就可以得到一分，当比赛完毕后，得分最多的一队则胜出。如果在比赛规定时间内得分相同，则须看比赛章则而定，</p>
+                       <p>运用推、拿、按、摩、揉、捏、点、拍等形式多样的手法，以期达到疏通经络、推行气血、扶伤止痛、祛邪扶正、调和阴阳的疗效</p>
                      </div>
                    </label>
                    <label class="weui-cell weui-check__label" for="s16">
                      <div class="weui-cell__hd">
-                       <input type="checkbox" name="checkbox1" class="weui-check" id="s16"/>
+                       <input type="checkbox" name="checkbox1" class="weui-check" id="s16" value="100" v-model="pickedValue"/>
                        <i class="weui-icon-checked"></i>
                      </div>
                      <div class="weui-cell__bd special">
                        <div>
-                         <span>推拿理疗 <span class="number">1次/月</span></span><span class="sumMoney">+￥500/年</span>
+                         <span>保健品鉴别 <span class="number">不限次数</span></span><span class="sumMoney">+￥100/年</span>
                        </div>
-                       <p>这里是服务介绍:比赛目的是尽量将足球射入对方的球门内，每射入一球就可以得到一分，当比赛完毕后，得分最多的一队则胜出。如果在比赛规定时间内得分相同，则须看比赛章则而定，</p>
+                       <p>如果有人向您推销保健品，我们社区服务团队会以专业的知识为您鉴别该保健品是否正品，是否有效，帮助您或您的家人免去被骗之忧。</p>
                      </div>
                    </label>
                    <label class="weui-cell weui-check__label" for="s17">
                      <div class="weui-cell__hd">
-                       <input type="checkbox" name="checkbox1" class="weui-check" id="s17"/>
+                       <input type="checkbox" name="checkbox1" class="weui-check" id="s17" value="800" v-model="pickedValue"/>
                        <i class="weui-icon-checked"></i>
                      </div>
                      <div class="weui-cell__bd special">
                        <div>
-                         <span>推拿理疗 <span class="number">1次/月</span></span><span class="sumMoney">+￥500/年</span>
+                         <span>健康讲座 <span class="number">1次/月</span></span><span class="sumMoney">+￥800/年</span>
                        </div>
-                       <p>这里是服务介绍:比赛目的是尽量将足球射入对方的球门内，每射入一球就可以得到一分，当比赛完毕后，得分最多的一队则胜出。如果在比赛规定时间内得分相同，则须看比赛章则而定，</p>
-                     </div>
-                   </label>
-                   <label class="weui-cell weui-check__label" for="s18">
-                     <div class="weui-cell__hd">
-                       <input type="checkbox" name="checkbox1" class="weui-check" id="s18"/>
-                       <i class="weui-icon-checked"></i>
-                     </div>
-                     <div class="weui-cell__bd special">
-                       <div>
-                         <span>推拿理疗 <span class="number">1次/月</span></span><span class="sumMoney">+￥500/年</span>
-                       </div>
-                       <p>这里是服务介绍:比赛目的是尽量将足球射入对方的球门内，每射入一球就可以得到一分，当比赛完毕后，得分最多的一队则胜出。如果在比赛规定时间内得分相同，则须看比赛章则而定，</p>
+                       <p>每月组织一次健康养生方面的讲座。</p>
                      </div>
                    </label>
                  </div>
@@ -150,11 +121,12 @@
                </div>
              </div>
 
-            <p class="terms border-1px">签约即表示同意 <span class="number">xxx签约医生服务协议</span> </p>
+            <p class="terms border-1px">签约即表示同意<span class="number">特扬签约医生服务协议</span> </p>
          </div>
          </div>
       <div class="totalAmount border-1px-top">
-        <span class="border-1px-right sumMoney">合计￥300.00/年</span>
+        <span class="border-1px-right sumMoney" v-if="pickedValue.length == 0">合计￥200/年</span>
+        <span class="sumMoney big" v-if="pickedValue.length > 0" ref="totalChange">合计￥{{Total}}/年</span>
         <span @click="signRight()">立即签约</span>
       </div>
        <toggle :patList="patientAll" :showPat="showPat" @activate="check" @toggleClosed="closePatient()"></toggle>
@@ -170,14 +142,21 @@
         return{
           title:"签约团队",
           rightTitle:"",
-          patientAll:['请选择签约人','火车','装甲车','汽车','自行车','摩托车','摩拜单车','小黄车'],
+          patientAll:['孙八一','李世峰','赵文武','孙大山'],
           showPat:false,
           displayPatient:"",
-          chosedIndex:0
+          chosedIndex:0,
+          pickedValue:[],
+          subtotal:0,
+          Total:0,
+          pickedItem:0
         }
       },
       mounted(){
         this._initSignTeamScroll()
+      },
+      computed:{
+
       },
       methods:{
         _initSignTeamScroll(){
@@ -209,6 +188,54 @@
       components:{
           "VHeader":header,
            Toggle
+      },
+      watch:{
+        pickedValue:function(){
+            this.$nextTick(()=>{
+              if(this.pickedValue.length == 0){
+                this.Total = 0
+                this.pickedItem = 0
+                this.subtotal = 0
+                this.$refs.addBy.style.animationName = ''
+                this.$refs.addBy.style.animationName = 'makeBigStart'
+                this.$refs.addBy.style.animationDuration = 1 + "s"
+              }else if(this.pickedValue.length == 1){
+                this.Total = 0
+                this.pickedItem = 1
+                this.$refs.addBy.style.animationName = ''
+                this.$refs.addBy.style.animationName = 'makeBig'
+                this.$refs.totalChange.style.animationName=''
+                this.$refs.totalChange.style.animationName='makeBig'
+                this.$refs.totalChange.style.animationDuration= 1 + 's'
+                this.$refs.addBy.style.animationDuration = 1 + "s"
+                this.Total += parseInt(this.pickedValue[0]) + 200
+                this.subtotal= parseInt(this.pickedValue[0])
+              }else if(this.pickedValue.length == 2){
+                this.Total = 0
+                this.pickedItem = 2
+                this.$refs.addBy.style.animationName = ''
+                this.$refs.addBy.style.animationName = 'makeBigOne'
+                this.$refs.totalChange.style.animationName=''
+                this.$refs.totalChange.style.animationName='makeBigOne'
+                this.$refs.totalChange.style.animationDuration= 1 + 's'
+                this.$refs.addBy.style.animationDuration = 1 + "s"
+                this.Total += parseInt(this.pickedValue[0])+ parseInt(this.pickedValue[1])+ 200
+                this.subtotal= parseInt(this.pickedValue[0])+ parseInt(this.pickedValue[1])
+              }else if(this.pickedValue.length == 3){
+                this.Total = 0
+                this.pickedItem = 3
+                this.$refs.addBy.style.animationName = ''
+                this.$refs.addBy.style.animationName = 'makeBigTwo'
+                this.$refs.totalChange.style.animationName=''
+                this.$refs.totalChange.style.animationName='makeBigTwo'
+                this.$refs.totalChange.style.animationDuration= 1 + 's'
+                this.$refs.addBy.style.animationDuration = 1 + "s"
+                this.Total += parseInt(this.pickedValue[0])+ parseInt(this.pickedValue[1])+parseInt(this.pickedValue[2])+ 200
+                this.subtotal= parseInt(this.pickedValue[0])+ parseInt(this.pickedValue[1])+parseInt(this.pickedValue[2])
+              }
+            })
+
+        }
       }
   }
 </script>
@@ -278,10 +305,48 @@
       margin:0 auto;
       display: flex;
       align-items: center;
-      label{
-        padding:0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      .big{
+          /*animation-name: makeBig;*/
+          animation-duration: 2s;
       }
-      .special{
+      @keyframes makeBigStart{
+        0% {
+          transform: scale(1.5);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      @keyframes makeBig{
+        0% {
+          transform: scale(1.5);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      @keyframes makeBigOne{
+        0% {
+          transform: scale(1.5);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      @keyframes makeBigTwo{
+        0% {
+          transform: scale(1.5);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      .weuiSuccess{
+        margin-right: 15rem/$rem;
+      }
+      .rightChecked{
         span{
           font-size: 32rem/$rem!important;
           color: #333333;
@@ -292,7 +357,31 @@
         }
         p{
           margin:0;
+          font-size: 32rem/$rem;
+          color: #999999;
+        }
+        .sumMoney{
           font-size: 28rem/$rem;
+          color: #FF9933;
+        }
+      }
+      label{
+        padding:0;
+      }
+      .special{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        span{
+          font-size: 32rem/$rem!important;
+          color: #333333;
+        }
+        >div{
+          display: flex;
+          justify-content: space-between;
+        }
+        p{
+          margin:0;
+          font-size: 32rem/$rem;
           color: #999999;
         }
         .sumMoney{

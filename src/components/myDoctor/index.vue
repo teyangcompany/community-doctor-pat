@@ -2,8 +2,8 @@
   <div class="whole">
     <v-header :title="onlineTitle" :rightTitle="onlineRightTitle" v-if="tellPath == '/onlineIndex'"></v-header>
     <v-header :title="onlineTitle" :rightTitle="onlineRightTitle" v-else-if="tellPath == '/myConsult'"></v-header>
-    <v-header :title="title" :rightTitle="rightTitle" v-else-if="tellPath == '/index/recent'"></v-header>
-    <v-header :title="title" :rightTitle="rightTitle" v-else-if="tellPath == '/index/signDoctor'"></v-header>
+    <v-header :title="title" :rightTitle="rightTitle" v-else-if="tellPath == '/index/recent'" @on-look="look()"></v-header>
+    <v-header :title="title" :rightTitle="rightTitle" v-else-if="tellPath == '/index/signDoctor'" @on-look="look()"></v-header>
     <nav-bar :tagNames="onlineNames" v-if="tellPath == '/onlineIndex'"></nav-bar>
     <nav-bar :tagNames="onlineNames" v-else-if="tellPath == '/myConsult'"></nav-bar>
     <nav-bar :tagNames="tagNames" v-else-if="tellPath == '/index/recent'"></nav-bar>
@@ -11,11 +11,12 @@
     <router-view></router-view>
     <div class="footer border-1px-top">
     <router-link tag="div" :to="item.tabLink" v-for="item in bottomTags" :key="item.id" :class="tellPath == '/myDoctorChat/followDoctor'? 'followBlue':''">
-    <img v-if="tellPath == '/myIndex'" :src="item.imgLinkMyOn">
+    <img v-if="tellPath == '/myIndex'" :src="item.imgLastOn">
     <img v-else-if="tellPath == '/index/recent'" :src="item.imgLinkIndexOn">
     <img v-else-if="tellPath == '/index/signDoctor'" :src="item.imgLinkIndexOn">
     <img v-else-if="tellPath == '/onlineIndex'" :src="item.imgLinkOn">
       <img v-else-if="tellPath == '/myConsult'" :src="item.imgLinkOn">
+      <img v-else-if="tellPath == '/institution'" :src="item.imgLinkMyOn">
     <span >{{item.title}}</span>
     </router-link>
     </div>
@@ -28,7 +29,7 @@
     data(){
       return{
         title:'我的医生',
-        rightTitle:'',
+        rightTitle:'预约服务',
         onlineTitle:"在线咨询",
         onlineRightTitle:"",
         onlineNames:[
@@ -40,9 +41,10 @@
           {title1:"签约医生",tabLink:'/index/signDoctor'},
         ],
         bottomTags:[
-          {title:'我的医生',tabLink:"/index/recent",imgLinkIndexOn:"./static/img/home_on.png",imgLinkOn:"./static/img/home.png",imgLinkMyOn:"./static/img/home.png"},
-          {title:'在线咨询',tabLink:"/onlineIndex",imgLinkIndexOn:"./static/img/myDoctorBottom.png",imgLinkOn:"./static/img/myDoctor_on.png",imgLinkMyOn:"./static/img/myDoctorBottom.png"},
-          {title:'我的',tabLink:"/myIndex",imgLinkIndexOn:"./static/img/myBottom.png",imgLinkOn:"./static/img/myBottom.png",imgLinkMyOn:"./static/img/myBottom_on.png"}
+          {title:'我的医生',tabLink:"/index/recent",imgLinkIndexOn:"./static/img/home_on.png",imgLinkOn:"./static/img/home.png",imgLinkMyOn:"./static/img/home.png",imgLastOn:"./static/img/home.png"},
+          {title:'在线咨询',tabLink:"/onlineIndex",imgLinkIndexOn:"./static/img/consult.png",imgLinkOn:"./static/img/consult_on.png",imgLinkMyOn:"./static/img/consult.png",imgLastOn:"./static/img/consult.png"},
+          {title:'找医生',tabLink:"/institution",imgLinkIndexOn:"./static/img/myDoctorBottom.png",imgLinkOn:"./static/img/myDoctorBottom.png",imgLinkMyOn:"./static/img/myDoctor_on.png",imgLastOn:"./static/img/myDoctorBottom.png"},
+          {title:'我的',tabLink:"/myIndex",imgLinkIndexOn:"./static/img/myBottom.png",imgLinkOn:"./static/img/myBottom.png",imgLinkMyOn:"./static/img/myBottom.png",imgLastOn:"./static/img/myBottom_on.png"}
         ],
         tellPath:""
       }
@@ -59,6 +61,9 @@
     methods:{
       goIndex(){
         this.$router.push('/patientIndex')
+      },
+      look(){
+          this.$router.push('/bookService')
       }
     },
     watch:{
