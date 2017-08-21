@@ -6,7 +6,7 @@
       <router-link tag="div" to="/detailPatient" class="usualLine border-1px">
         <div class="usualCenter">
           <div class="usualLeft">
-            <h4>孙八一 男 27岁</h4>
+            <h4>刘劲松 男 27岁</h4>
             <p>手机号: <span>1383838438</span></p>
             <p>身份证号: <span>4573829758493875617</span></p>
           </div>

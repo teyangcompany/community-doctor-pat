@@ -31,6 +31,9 @@
     <section class="nav"  @click="goMyConsult()" v-else-if="path == '/iWantConsult'">
       <span class="rightWord">{{rightTitle}}</span>
     </section>
+    <section class="nav"  @click="goComment()" v-else-if="path == '/detailService'">
+      <span class="rightWord">{{rightTitle}}</span>
+    </section>
     <section class="nav"  @click="goSingle()" v-else-if="path == '/chat'">
       <span class="rightWord">{{rightTitle}}</span>
     </section>
@@ -66,6 +69,9 @@
       },
       goMyConsult(){
          this.$emit("on-consult")
+      },
+      goComment(){
+         this.$emit("on-comment")
       },
       goChat(){
           this.$emit("on-chat")

@@ -11,7 +11,7 @@
               <img class="profile" src="../../../static/img/p1.jpg" alt="">
               <div class="rightWord">
                   <div>
-                    <span>孙八一</span><span>恒大绿洲小区</span><span>男 27岁</span>
+                    <span>刘劲松</span><span>恒大绿洲小区</span><span>男 27岁</span>
                   </div>
                 <img class="look" src="../../../static/img/查看更多.png" alt="">
               </div>

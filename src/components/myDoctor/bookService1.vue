@@ -80,7 +80,7 @@
             </div>
           </div>
         </div>
-        <div class="remark">
+        <div class="remark border-1px">
           <textarea placeholder="(选填)您的情况、申请理由、地址等信息" v-model="message"></textarea>
         </div>
       </div>
@@ -190,6 +190,7 @@
 <style scoped lang="scss">
   /*@import '../../common/public.scss';*/
   @import '../../common/var1.scss';
+  @import '../../common/mixin.scss';
   .healthFile{
     width:100%;
     position: fixed;

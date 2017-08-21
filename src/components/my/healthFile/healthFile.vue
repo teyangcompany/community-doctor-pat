@@ -12,7 +12,7 @@
             <div class="cancelIntro">
               <div class="introTitle">
                 <span class="subTitle">王小仙</span>
-                <p>姓名:孙八一</p>
+                <p>姓名:刘劲松</p>
                 <p>男 27岁 浙江杭州</p>
               </div>
             </div>

@@ -14,6 +14,7 @@ import add from './patient/add'
 import mySignService from './mySignService/mySignService'
 import detailService from './mySignService/detailService'
 import detailPage from './healthFile/detailPage'
+import comment from './mySignService/comment'
 export default[
   {
     path:'/healthFile',
@@ -60,6 +61,10 @@ export default[
   {
     path:"/detailService",
     component:detailService
+  },
+  {
+    path:"/comment",
+    component:comment
   },
   {
     path:"/add",

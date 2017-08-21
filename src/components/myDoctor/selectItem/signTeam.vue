@@ -142,7 +142,7 @@
         return{
           title:"签约团队",
           rightTitle:"",
-          patientAll:['孙八一','李世峰','赵文武','孙大山'],
+          patientAll:['刘劲松','李世峰','赵文武','孙大山'],
           showPat:false,
           displayPatient:"",
           chosedIndex:0,
@@ -153,7 +153,11 @@
         }
       },
       mounted(){
-        this._initSignTeamScroll()
+        this.$nextTick(()=>{
+            setTimeout(()=>{
+              this._initSignTeamScroll()
+            },100)
+        })
       },
       computed:{
 
@@ -276,7 +280,7 @@
           width: 7.5px;
         }
         .sumMoney{
-          font-size: 28rem/$rem;
+          font-size: 32rem/$rem;
           color: #FF9933;
         }
       }
@@ -361,7 +365,7 @@
           color: #999999;
         }
         .sumMoney{
-          font-size: 28rem/$rem;
+          font-size: 32rem/$rem;
           color: #FF9933;
         }
       }
@@ -385,7 +389,7 @@
           color: #999999;
         }
         .sumMoney{
-          font-size: 28rem/$rem;
+          font-size: 32rem/$rem;
           color: #FF9933;
         }
       }
@@ -422,7 +426,7 @@
     }
   }
   .sumMoney{
-    font-size: 28rem/$rem!important;
+    font-size: 32rem/$rem!important;
     color: #FF9933!important;
   }
   .red{

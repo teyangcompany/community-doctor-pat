@@ -1,6 +1,6 @@
 <template>
     <div>
-          <v-header :title="title" :rightTitle="rightTitle"></v-header>
+          <v-header :title="title" :rightTitle="rightTitle" @on-comment="goComment"></v-header>
           <div class="detailService" ref="detailService">
             <div>
               <ul class="border-1px">
@@ -113,7 +113,10 @@
               this.serviceScroll = new BScroll(this.$refs.detailService,{
                   click:true
               })
-          }
+          },
+        goComment(){
+              this.$router.push("/comment")
+        }
       },
       components:{
           "VHeader":header
